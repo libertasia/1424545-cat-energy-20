@@ -4,8 +4,11 @@
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
-    "stylelint": "13.6.1",
-    "stylelint-config-htmlacademy": "0.1.4"
+    "csscomb": "^4.3.0",
+    "htmlhint": "^0.14.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-htmlacademy": "^0.1.4",
+    "stylelint-config-standard": "^20.0.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -18,5 +21,6 @@
   ],
   "engines": {
     "node": "12.18.2"
-  }
+  },
+  "dependencies": {}
 }
