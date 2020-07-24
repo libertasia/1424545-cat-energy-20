@@ -1,0 +1,22 @@
+.add-catalog-item__title {
+  @include font-oswald-normal(16px, 16px);
+  text-transform: uppercase;
+  color: $special-dark-grey-2;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.add-catalog-item__description {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.add-catalog-item__count {
+  @include font-arial-normal(14px, 14px);
+  color: $special-dark-grey;
+}
+
+.add-catalog-item__price {
+  @include font-arial-normal(14px, 14px);
+  color: $special-dark-grey;
+}

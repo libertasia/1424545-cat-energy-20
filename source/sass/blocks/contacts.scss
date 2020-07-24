@@ -1,0 +1,23 @@
+.contacts {
+  border: none;
+  margin: 0 20px 27px 19px;
+  padding: 0;
+}
+
+.contacts__title {
+  @include font-oswald-normal(24px, 26px);
+  margin: 26px 0 32px 0;
+  padding: 0;
+}
+
+.contacts__label {
+  @include font-oswald-normal(16px, 18px);
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
+.contacts__input::placeholder {
+  @include font-oswald-normal(16px, 18px);
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}

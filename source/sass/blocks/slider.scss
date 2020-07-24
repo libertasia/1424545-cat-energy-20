@@ -1,0 +1,4 @@
+.slider__button {
+  @include font-oswald-normal(16px, 20px);
+  text-transform: uppercase;
+}

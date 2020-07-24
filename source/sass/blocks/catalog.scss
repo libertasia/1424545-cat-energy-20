@@ -1,0 +1,12 @@
+.catalog {
+  margin: 0 20px 0 20px;
+}
+
+.catalog__header {
+  @include font-oswald-normal(36px, 36px);
+  margin: 27px 0 41px 0;
+}
+
+.catalog__list {
+  list-style: none;
+}

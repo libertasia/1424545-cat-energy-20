@@ -1,0 +1,22 @@
+.catalog-more {
+  padding: 79px 20px 25px 20px;
+}
+
+.catalog-more__text-show {
+  @include font-oswald-normal(16px, 20px);
+  text-transform: uppercase;
+  color: $special-dark-title;
+}
+
+.catalog-more__more-taste {
+  @include font-arial-normal(12px, 16px);
+  color: $special-dark-grey;
+}
+
+.catalog-more__show-button {
+  @include font-oswald-normal(16px, 0);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $special-dark-grey;
+  background-color: $basic-grey;
+}

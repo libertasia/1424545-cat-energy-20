@@ -1,0 +1,17 @@
+.catalog-item__link {
+  text-decoration: none;
+}
+
+.catalog-item__title {
+  @include font-oswald-normal(16px, 20px);
+  color: $special-dark-grey-2;
+  text-transform: uppercase;
+}
+
+.catalog-item__order-button {
+  @include font-oswald-normal(16px, 0);
+  color: $basic-white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $basic-bright;
+}

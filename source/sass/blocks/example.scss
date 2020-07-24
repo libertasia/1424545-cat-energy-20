@@ -1,0 +1,23 @@
+.example {
+  background-color: $example-background-grey;
+  padding: 27px 20px 31px 20px;
+}
+
+.example__title {
+  @include font-oswald-normal(36px, 40px);
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.example__text {
+  @include font-arial-normal(14px, 18px);
+  color: $special-dark-grey;
+  margin: 0;
+  margin-bottom: 39px;
+}
+
+.example__food {
+  @include font-oswald-normal(14px, 20px);
+  margin: 0;
+  margin-bottom: 301px;
+}

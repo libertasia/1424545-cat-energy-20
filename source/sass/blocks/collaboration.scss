@@ -1,0 +1,20 @@
+.collaboration {
+  background-color: $basic-grey;
+  padding: 28px 19px 22px 19px;
+}
+
+.collaboration--index {
+  background-color: $basic-white;
+}
+
+.collaboration__title {
+  @include font-oswald-normal(16px, 18px);
+  text-transform: uppercase;
+  color: $special-dark-title;
+  margin: 0;
+}
+
+.collaboration__address {
+  @include font-arial-normal(14px, 20px);
+  color: $special-dark-grey;
+}

@@ -1,0 +1,25 @@
+.advantages {
+  margin: 0 20px 20px 20px;
+}
+.advantages__title {
+  @include font-oswald-normal(36px, 40px);
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 80px;
+}
+
+.advantages__item {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.advantages__description {
+  @include font-arial-normal(14px, 18px);
+  color: $special-dark-grey;
+}

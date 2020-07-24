@@ -1,0 +1,14 @@
+.advertising {
+  margin: 0 20px 35px 20px;
+}
+
+.advertising__text {
+  @include font-arial-normal(16px, 20px);
+  color: $basic-white;
+  background-color: $basic-bright;
+  padding: 186px 61px 43px 58px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+

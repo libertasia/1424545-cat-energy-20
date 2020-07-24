@@ -1,1 +1,43 @@
-// Начните писать стили здесь
+@font-face {
+  font-family: "Oswald-normal";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald-medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+}
+
+@import "mixins.scss";
+@import "variables.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/page.scss";
+@import "blocks/site-list.scss";
+@import "blocks/promo.scss";
+@import "blocks/programs.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/example-description.scss";
+@import "blocks/slider.scss";
+@import "blocks/collaboration.scss";
+@import "blocks/catalog.scss";
+@import "blocks/catalog-item.scss";
+@import "blocks/item-description.scss";
+@import "blocks/catalog-more.scss";
+@import "blocks/additional-catalog.scss";
+@import "blocks/add-catalog-item.scss";
+@import "blocks/advertising.scss";
+@import "blocks/form.scss";
+@import "blocks/program-selection.scss";
+@import "blocks/cat-info.scss";
+@import "blocks/choose-program.scss";
+@import "blocks/contacts.scss";
+@import "blocks/comment.scss";
+@import "blocks/extra.scss";
+@import "blocks/footer.scss";

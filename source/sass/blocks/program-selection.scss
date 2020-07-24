@@ -1,0 +1,10 @@
+.program-selection__title {
+  @include font-oswald-normal(36px, 36px);
+  margin: 27px 20px 37px 20px;
+}
+
+.program-selection__text {
+  @include font-oswald-normal(14px, 18px);
+  text-transform: uppercase;
+  margin: 0 20px 39px 20px;
+}

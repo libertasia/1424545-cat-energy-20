@@ -1,0 +1,17 @@
+.cat-info {
+  border: none;
+  margin: 0 20px 24px 19px;
+  padding: 0;
+}
+
+.cat-info__label {
+  @include font-oswald-normal(16px, 18px);
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
+.cat-info__input::placeholder {
+  @include font-oswald-normal(16px, 18px);
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}

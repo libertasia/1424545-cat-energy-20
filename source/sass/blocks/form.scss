@@ -1,0 +1,12 @@
+.form__button {
+  @include font-oswald-normal(16px, 20px);
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-bright;
+  margin: 0 20px 21px 20px;
+}
+
+.form__required-text {
+  @include font-arial-normal(14px, 16px);
+  margin: 0 20px 32px 20px;
+}

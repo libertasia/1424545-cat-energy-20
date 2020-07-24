@@ -1,0 +1,13 @@
+.example-description {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.example-description__title {
+  @include font-oswald-normal(24px, 24px);
+}
+
+.example-description__text {
+  @include font-arial-normal(12px, 12px);
+  color: $special-dark-grey;
+}
