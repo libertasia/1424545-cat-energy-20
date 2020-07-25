@@ -1,10 +1,37 @@
 .collaboration {
-  background-color: $basic-grey;
+  background-color: $basic-white;
+  min-height: 64px;
   padding: 28px 19px 22px 19px;
+
+  @media (min-width: $medium) {
+    min-height: 88px;
+    padding: 62px 72px 51px 71px;
+  }
+
+  @media (min-width: $large) {
+    position: absolute;
+    z-index: 2;
+    top: 95px;
+    left: 110px;
+    width: 405px;
+    min-height: 88px;
+    padding: 62px 89px 51px 76px;
+  }
 }
 
-.collaboration--index {
-  background-color: $basic-white;
+.collaboration--grey {
+  background-color: $basic-grey;
+
+  @media (min-width: $large) {
+    background-color: $basic-white;
+  }
+}
+
+.collaboration__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .collaboration__title {
@@ -14,6 +41,20 @@
   text-transform: uppercase;
   color: $special-dark-title;
   margin: 0;
+  margin-right: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 140px;
+
+  @media (min-width: $medium) {
+    min-width: 171px;
+    margin-right: 295px;
+  }
+
+  @media (min-width: $large) {
+    min-width: 163px;
+    margin-right: 87px;
+  }
 }
 
 .collaboration__address {
@@ -22,4 +63,20 @@
   font-size: 14px;
   line-height: 1.43;
   color: $special-dark-grey;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 140px;
+
+  @media (min-width: $medium) {
+    text-align: right;
+    min-width: 159px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $large) {
+    text-align: left;
+    min-width: 155px;
+    justify-content: flex-start;
+  }
 }

@@ -1,3 +1,25 @@
 .map {
-  //
+  display: flex;
+  width: 320px;
+  height: 362px;
+
+  @media (min-width: $medium) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $large) {
+    width: 1440px;
+  }
+}
+
+.map__image {
+  @media (min-width: $medium) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $large) {
+    width: 1440px;
+  }
 }

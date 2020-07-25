@@ -1,3 +1,35 @@
 .header {
-  //
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  padding: 11px 20px 18px 20px;
+  background-color: $basic-white;
+  color: $basic-black;
+
+  @media (min-width: $medium) {
+    width: 708px;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 24px 30px 62px 30px;
+  }
+
+  @media (min-width: $large) {
+    width: 1220px;
+    justify-content: space-between;
+    padding: 53px 110px 32px 110px;
+  }
+}
+
+.header__logo {
+  min-height: 66px;
+
+  @media (min-width: $medium) {
+    min-height: 78px;
+    margin-right: 95px;
+  }
+
+  @media (min-width: $large) {
+    min-height: 109px;
+  }
 }

@@ -1,3 +1,20 @@
+.slider {
+  min-height: 289px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+
+  @media (min-width: $medium) {
+    min-height: 354px;
+  }
+
+  @media (min-width: $large) {
+    min-height: 325px;
+    max-width: 681px;
+  }
+}
+
 .slider__button {
   font-weight: normal;
   font-size: 16px;

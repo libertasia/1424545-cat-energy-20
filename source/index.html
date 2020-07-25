@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="header">
       <a class="header__logo">
-        <img src="https://via.placeholder.com/33x38" alt="Логотип Cat energy">
-        <img src="https://via.placeholder.com/101x18" alt="Название магазина Cat energy">
+        <img class="image" src="https://via.placeholder.com/191x38" alt="Логотип Cat energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -33,6 +32,11 @@
           </li>
         </ul>
       </nav>
+    </header>
+
+    <main class="main">
+      <h1 class="visually-hidden">Интернет-магазин функционального питания для котов</h1>
+
       <div class="promo">
         <p class="promo__description-header">
           Функциональное<br>
@@ -45,10 +49,6 @@
           Подобрать программу
         </a>
       </div>
-    </header>
-
-    <main class="main">
-      <h1 class="visually-hidden">Интернет-магазин функционального питания для котов</h1>
 
       <section class="programs">
         <div class="programs__wrapper">
@@ -125,95 +125,111 @@
       </section>
 
       <section class="example">
-        <div class="example__wrapper slider">
-          <h2 class="example__title">
-            Живой пример
-          </h2>
-          <p class="example__text">
-            Борис сбросил 5 кг за 2 месяца, просто<br>
-            заменив свой обычный корм на Cat<br>
-            Energy Slim. Отличный результат без<br>
-            изнуряющих тренировок! При этом он не<br>
-            менял своих привычек и по-прежнему<br>
-            спит по 16 часов в день.
-          </p>
-          <dl class="example__list example-description">
-            <dt class="example-description__title">
-              5 КГ
-            </dt>
-            <dd class="example-description__text">
-              снижение<br>
-              веса
-            </dd>
-            <dt class="example-description__title">
-              60 ДНЕЙ
-            </dt>
-            <dd class="example-description__text">
-              затрачено<br>
-              времени
-            </dd>
-          </dl>
-          <p class="example__food">
-            Затраты на питание: 15 000 РУБ.
-          </p>
-          <button class="slider__button button-previous slider__button--current" type="button">
-            Было
-          </button>
-          <button class="slider__button button-next" type="button">
-            Стало
-          </button>
-          <label class="slider__switch toggle">
-            <input class="toggle__switch" type="checkbox" checked>
-            <span class="toggle__slider round"></span>
-          </label>
+        <h2 class="example__title">
+          Живой пример
+        </h2>
+        <div class="example__wrapper">
+          <div class="example__description-wrapper">
+            <p class="example__text">
+              Борис сбросил 5 кг за 2 месяца, просто<br>
+              заменив свой обычный корм на Cat<br>
+              Energy Slim. Отличный результат без<br>
+              изнуряющих тренировок! При этом он не<br>
+              менял своих привычек и по-прежнему<br>
+              спит по 16 часов в день.
+            </p>
+            <ul class="example__list example-description">
+              <li class="example__list-item">
+                <p class="example-description__title">
+                  5 КГ
+                </p>
+                <p class="example-description__text">
+                  снижение<br>
+                  веса
+                </p>
+              </li>
+              <li class="example__list-item">
+                <p class="example-description__title">
+                  60 ДНЕЙ
+                </p>
+                <p class="example-description__text">
+                  затрачено<br>
+                  времени
+                </p>
+              </li>
+            </ul>
+            <p class="example__food">
+              Затраты на питание: 15 000 РУБ.
+            </p>
+          </div>
+          <div class="slider">
+            <button class="slider__button button-previous slider__button--current" type="button">
+              Было
+            </button>
+            <button class="slider__button button-next" type="button">
+              Стало
+            </button>
+            <label class="slider__switch toggle">
+              <input class="toggle__switch" type="checkbox" checked>
+              <span class="toggle__slider round"></span>
+            </label>
+          </div>
         </div>
       </section>
 
-      <section class="collaboration collaboration--index">
-        <div class="collaboration__wrapper">
-          <h2 class="collaboration__title">
-            Приглашаем<br>
-            к сотрудничеству<br>
-            дилеров!
-          </h2>
-          <p class="collaboration__address">
-            ул. Большая<br>
-            Конюшенная, д. 19/8<br>
-            Санкт-Петербург
-          </p>
-        </div>
-      </section>
+      <div class="map-wrapper">
+        <section class="collaboration">
+          <div class="collaboration__wrapper">
+            <h2 class="collaboration__title">
+              Приглашаем<br>
+              к сотрудничеству<br>
+              дилеров!
+            </h2>
+            <p class="collaboration__address">
+              ул. Большая<br>
+              Конюшенная, д. 19/8<br>
+              Санкт-Петербург
+            </p>
+          </div>
+        </section>
 
-      <div class="map">
-        <img src="https://via.placeholder.com/320x362" alt="Карта нахождения интернет-магазина в г. Санкт-Петербург">
+        <div class="map">
+          <img class="map__image image" src="https://via.placeholder.com/320x362" alt="Карта нахождения интернет-магазина в г. Санкт-Петербург">
+        </div>
       </div>
     </main>
 
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo footer-logo">
-          <img src="https://via.placeholder.com/128x24" alt="Название магазина Cat energy">
+          <img class="image" src="https://via.placeholder.com/128x24" alt="Название магазина Cat energy">
         </a>
         <section class="footer__social social">
           <h2 class="visually-hidden">Ссылки на соцсети</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте</span>
+                <img class="image" src="https://via.placeholder.com/23x16" alt="Мы в Вконтакте">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                <span class="visually-hidden">Инстаграм</span>
+                <img class="image" src="https://via.placeholder.com/16x16" alt="Мы в Инстаграме">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Фейсбук</span>
+                <img class="image" src="https://via.placeholder.com/22x22" alt="Мы в Фейсбуке">
+              </a>
             </li>
           </ul>
         </section>
         <div class="footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="https://via.placeholder.com/114x18" alt="Перейти на сайт HtmlAcademy">
-          </a>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy, перейти на сайт">
+            <img class="image" src="https://via.placeholder.com/281x34" alt="Логотип HTML Academy, перейти на сайт">
           </a>
         </div>
       </div>

@@ -1,20 +1,82 @@
 .additional-catalog {
-  margin: 28px 20px 39px 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.additional-catalog__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding: 0 20px;
+
+  @media (min-width: $medium) {
+    width: 708px;
+    padding: 0 30px 0 30px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $large) {
+    width: 1220px;
+    padding: 0 110px 0 110px;
+    margin-bottom: 86px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .additional-catalog__header {
   font-weight: normal;
   font-size: 24px;
-  margin: 0;
-  margin-bottom: 35px;
+  margin: 0 auto;
+  padding: 28px 20px 35px 20px;
+  width: 280px;
+
+  @media (min-width: $medium) {
+    width: 671px;
+    padding: 0 30px 79px 67px;
+  }
+
+  @media (min-width: $large) {
+    width: 1220px;
+    padding: 0 110px 81px 110px;
+  }
 }
 
 .additional-catalog__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $large) {
+    margin-right: 80px;
+  }
 }
 
 .additional-catalog__item {
-  margin: 13px 0 19px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 280px;
+  min-height: 130px;
+  margin: 0;
+
+  @media (min-width: $medium) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 708px;
+    min-height: 140px;
+  }
+
+  @media (min-width: $large) {
+    align-items: baseline;
+    width: 895px;
+    min-height: 72px;
+  }
 }
 
 .additional-catalog__order-button {
@@ -24,4 +86,30 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: $basic-bright;
+  display: flex;
+  flex-wrap: wrap;
+  width: 240px;
+  min-height: 20px;
+  margin: 0;
+  margin-bottom: 19px;
+  padding: 10px 20px 10px 20px;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $medium) {
+    width: 592px;
+    min-height: 26px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    padding: 6px 20px 6px 20px;
+  }
+
+  @media (min-width: $large) {
+    width: 192px;
+    min-height: 26px;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 17px;
+    padding: 7px 26px 7px 26px;
+  }
 }

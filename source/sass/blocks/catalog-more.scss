@@ -1,5 +1,26 @@
 .catalog-more {
-  padding: 79px 20px 25px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 280px;
+  min-height: 184px;
+  margin: 0 20px 25px 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $medium) {
+    background-color: $basic-white;
+    width: 324px;
+    min-height: 430px;
+    margin: 0;
+  }
+
+  @media (min-width: $large) {
+    width: 245px;
+    min-height: 431px;
+    margin: 0;
+  }
 }
 
 .catalog-more__text-show {
@@ -8,6 +29,23 @@
   line-height: 1.25;
   text-transform: uppercase;
   color: $special-dark-title;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  padding-top: 79px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 23px;
+    padding-top: 161px;
+  }
+
+  @media (min-width: $large) {
+    padding-top: 160px;
+  }
 }
 
 .catalog-more__more-taste {
@@ -16,6 +54,17 @@
   font-size: 12px;
   line-height: 1.33;
   color: $special-dark-grey;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 0;
+
+  @media (min-width: $medium) {
+    margin-bottom: 87px;
+  }
 }
 
 .catalog-more__show-button {
@@ -25,4 +74,20 @@
   text-decoration: none;
   color: $special-dark-grey;
   background-color: $basic-grey;
+  display: flex;
+  flex-wrap: wrap;
+  width: 240px;
+  min-height: 20px;
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $medium) {
+    width: 209px;
+  }
+
+  @media (min-width: $large) {
+    width: 129px;
+  }
 }
