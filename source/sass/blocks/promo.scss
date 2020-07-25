@@ -4,21 +4,25 @@
 }
 
 .promo__description-header {
-  @include font-oswald-normal(36px, 36px);
+  font-weight: normal;
+  font-size: 36px;
   background-color: $basic-bright;
   padding: 27px 35px 25px 36px;
   margin: 0;
 }
 
 .promo__description-slogan {
-  @include font-oswald-normal(14px, 14px);
+  font-weight: normal;
+  font-size: 14px;
   background-color: $basic-bright;
   padding: 0 62px 299px 60px;
   margin: 0;
 }
 
 .promo__button {
-  @include font-oswald-normal(14px, 18px);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.29;
   background-color: $basic-bright;
   color: $basic-white;
   text-decoration: none;

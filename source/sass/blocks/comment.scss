@@ -3,13 +3,17 @@
 }
 
 .comment__title {
-  @include font-oswald-normal(24px, 26px);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.1;
   margin: 0;
   margin-bottom: 34px;
 }
 
 .comment__text {
-  @include font-oswald-normal(16px, 18px);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.125;
   text-transform: uppercase;
   color: $special-dark-grey;
 }

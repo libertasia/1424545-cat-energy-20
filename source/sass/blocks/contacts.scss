@@ -5,19 +5,25 @@
 }
 
 .contacts__title {
-  @include font-oswald-normal(24px, 26px);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.1;
   margin: 26px 0 32px 0;
   padding: 0;
 }
 
 .contacts__label {
-  @include font-oswald-normal(16px, 18px);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.125;
   text-transform: uppercase;
   color: $special-dark-grey;
 }
 
 .contacts__input::placeholder {
-  @include font-oswald-normal(16px, 18px);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.125;
   text-transform: uppercase;
   color: $special-dark-grey;
 }

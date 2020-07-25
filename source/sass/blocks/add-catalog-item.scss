@@ -1,5 +1,7 @@
 .add-catalog-item__title {
-  @include font-oswald-normal(16px, 16px);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
   text-transform: uppercase;
   color: $special-dark-grey-2;
   margin: 0;
@@ -12,11 +14,15 @@
 }
 
 .add-catalog-item__count {
-  @include font-arial-normal(14px, 14px);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1;
   color: $special-dark-grey;
 }
 
 .add-catalog-item__price {
-  @include font-arial-normal(14px, 14px);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1;
   color: $special-dark-grey;
 }

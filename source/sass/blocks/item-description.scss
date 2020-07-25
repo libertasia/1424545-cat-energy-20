@@ -1,9 +1,15 @@
 .item-description__title {
-  @include font-arial-normal(12px, 16px);
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.33;
   color: $special-dark-grey;
 }
 
 .item-description__text {
-  @include font-arial-normal(12px, 16px);
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.33;
   color: $special-dark-grey;
 }

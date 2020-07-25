@@ -3,7 +3,8 @@
 }
 
 .catalog__header {
-  @include font-oswald-normal(36px, 36px);
+  font-weight: normal;
+  font-size: 36px;
   margin: 27px 0 41px 0;
 }
 

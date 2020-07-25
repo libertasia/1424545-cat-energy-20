@@ -16,7 +16,9 @@
 }
 
 .choose-program__label {
-  @include font-oswald-normal(16px, 18px);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.125;
   text-transform: uppercase;
   color: $special-dark-grey-2;
 }

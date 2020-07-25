@@ -3,7 +3,10 @@
 }
 
 .advertising__text {
-  @include font-arial-normal(16px, 20px);
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
   color: $basic-white;
   background-color: $basic-bright;
   padding: 186px 61px 43px 58px;

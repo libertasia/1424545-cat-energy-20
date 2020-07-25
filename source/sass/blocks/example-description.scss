@@ -4,10 +4,13 @@
 }
 
 .example-description__title {
-  @include font-oswald-normal(24px, 24px);
+  font-weight: normal;
+  font-size: 24px;
 }
 
 .example-description__text {
-  @include font-arial-normal(12px, 12px);
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
   color: $special-dark-grey;
 }

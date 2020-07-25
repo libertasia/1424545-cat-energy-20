@@ -4,20 +4,27 @@
 }
 
 .example__title {
-  @include font-oswald-normal(36px, 40px);
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.1;
   margin: 0;
   margin-bottom: 33px;
 }
 
 .example__text {
-  @include font-arial-normal(14px, 18px);
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.29;
   color: $special-dark-grey;
   margin: 0;
   margin-bottom: 39px;
 }
 
 .example__food {
-  @include font-oswald-normal(14px, 20px);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.43;
   margin: 0;
   margin-bottom: 301px;
 }

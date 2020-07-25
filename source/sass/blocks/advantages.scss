@@ -3,7 +3,9 @@
 }
 
 .advantages__title {
-  @include font-oswald-normal(36px, 40px);
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.11;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -21,6 +23,9 @@
 }
 
 .advantages__description {
-  @include font-arial-normal(14px, 18px);
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.29;
   color: $special-dark-grey;
 }

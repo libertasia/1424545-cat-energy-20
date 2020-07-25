@@ -3,13 +3,16 @@
 }
 
 .catalog-item__title {
-  @include font-oswald-normal(16px, 20px);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
   color: $special-dark-grey-2;
   text-transform: uppercase;
 }
 
 .catalog-item__order-button {
-  @include font-oswald-normal(16px, 0);
+  font-weight: normal;
+  font-size: 16px;
   color: $basic-white;
   text-transform: uppercase;
   text-decoration: none;

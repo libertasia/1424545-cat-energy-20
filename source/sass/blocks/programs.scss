@@ -11,17 +11,24 @@
 }
 
 .programs__title {
-  @include font-oswald-normal(24px, 37px);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.54;
   text-transform: uppercase;
 }
 
 .programs__description {
-  @include font-arial-normal(14px, 18px);
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.29;
   color: $special-dark-grey;
 }
 
 .programs__link {
-  @include font-oswald-normal(16px, 16px);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
   text-transform: uppercase;
   color: $basic-black;
   text-decoration: none;

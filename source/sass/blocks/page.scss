@@ -1,5 +1,7 @@
 .page__body {
-  @include font-oswald-normal(14px, 26px);
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1;
   color: $basic-black;
   background-color: $basic-white;
   background-position: top center;
