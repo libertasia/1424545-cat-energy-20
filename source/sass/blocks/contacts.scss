@@ -1,0 +1,29 @@
+.contacts {
+  border: none;
+  margin: 0 20px 27px 19px;
+  padding: 0;
+}
+
+.contacts__title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.1;
+  margin: 26px 0 32px 0;
+  padding: 0;
+}
+
+.contacts__label {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.125;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
+.contacts__input::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.125;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}

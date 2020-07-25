@@ -1,0 +1,25 @@
+.collaboration {
+  background-color: $basic-grey;
+  padding: 28px 19px 22px 19px;
+}
+
+.collaboration--index {
+  background-color: $basic-white;
+}
+
+.collaboration__title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.125;
+  text-transform: uppercase;
+  color: $special-dark-title;
+  margin: 0;
+}
+
+.collaboration__address {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.43;
+  color: $special-dark-grey;
+}

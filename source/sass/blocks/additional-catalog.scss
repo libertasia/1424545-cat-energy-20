@@ -1,0 +1,27 @@
+.additional-catalog {
+  margin: 28px 20px 39px 20px;
+}
+
+.additional-catalog__header {
+  font-weight: normal;
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.additional-catalog__list {
+  list-style: none;
+}
+
+.additional-catalog__item {
+  margin: 13px 0 19px 0;
+}
+
+.additional-catalog__order-button {
+  font-weight: normal;
+  font-size: 16px;
+  color: $basic-white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $basic-bright;
+}

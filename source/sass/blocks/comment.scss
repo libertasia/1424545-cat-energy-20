@@ -1,0 +1,19 @@
+.comment {
+  margin: 0 20px 27px 19px;
+}
+
+.comment__title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.1;
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.comment__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.125;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}

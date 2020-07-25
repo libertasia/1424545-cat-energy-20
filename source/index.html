@@ -3,38 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="header-logo">
-        <a class="header-logo__icon">
-          <img src="https://via.placeholder.com/33x38" alt="Логотип Cat energy">
-          <img src="https://via.placeholder.com/101x18" alt="Название магазина Cat energy">
-        </a>
-      </div>
+      <a class="header__logo">
+        <img src="https://via.placeholder.com/33x38" alt="Логотип Cat energy">
+        <img src="https://via.placeholder.com/101x18" alt="Название магазина Cat energy">
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
       </nav>
       <div class="promo">
         <p class="promo__description-header">
@@ -145,13 +142,15 @@
               5 КГ
             </dt>
             <dd class="example-description__text">
-              снижение веса
+              снижение<br>
+              веса
             </dd>
             <dt class="example-description__title">
               60 ДНЕЙ
             </dt>
             <dd class="example-description__text">
-              затрачено времени
+              затрачено<br>
+              времени
             </dd>
           </dl>
           <p class="example__food">
@@ -170,7 +169,7 @@
         </div>
       </section>
 
-      <section class="collaboration">
+      <section class="collaboration collaboration--index">
         <div class="collaboration__wrapper">
           <h2 class="collaboration__title">
             Приглашаем<br>

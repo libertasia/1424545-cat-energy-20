@@ -1,0 +1,35 @@
+.programs__list {
+  list-style: none;
+  margin: 0 20px 7px 20px;
+  padding: 0;
+}
+
+.programs__item {
+  background-color: $basic-grey;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.programs__title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.54;
+  text-transform: uppercase;
+}
+
+.programs__description {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $special-dark-grey;
+}
+
+.programs__link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: $basic-black;
+  text-decoration: none;
+}

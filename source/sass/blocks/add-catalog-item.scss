@@ -1,0 +1,28 @@
+.add-catalog-item__title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $special-dark-grey-2;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.add-catalog-item__description {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.add-catalog-item__count {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1;
+  color: $special-dark-grey;
+}
+
+.add-catalog-item__price {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1;
+  color: $special-dark-grey;
+}

@@ -1,0 +1,16 @@
+.site-list {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 0;
+}
+
+.site-list__item {
+  padding: 22px 22px 24px 22px;
+}
+
+.site-list__link {
+  color: $basic-black;
+  text-decoration: none;
+}

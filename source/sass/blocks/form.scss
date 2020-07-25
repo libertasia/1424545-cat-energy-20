@@ -1,0 +1,17 @@
+.form__button {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-bright;
+  margin: 0 20px 21px 20px;
+}
+
+.form__required-text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  margin: 0 20px 32px 20px;
+}
