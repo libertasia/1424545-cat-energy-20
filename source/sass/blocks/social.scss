@@ -1,3 +1,24 @@
 .social {
-  //
+  min-width: 118px;
+  margin: 0 0 22px;
+  display: flex;
+
+  @media (min-width: $medium) {
+    margin: 0;
+  }
+}
+
+.social__list {
+  margin: 0 auto;
+  padding: 20px 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social__item {
+  padding: 10px 10px;
 }

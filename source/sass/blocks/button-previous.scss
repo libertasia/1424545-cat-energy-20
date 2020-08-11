@@ -1,3 +1,8 @@
 .button-previous {
-  //
+  margin: 0;
+  margin-right: 109px;
+
+  @media (min-width: $medium) {
+    margin-right: 472px;
+  }
 }

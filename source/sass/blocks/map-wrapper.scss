@@ -1,6 +1,7 @@
-.main {
+.map-wrapper {
   width: 320px;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: $medium) {
     width: 768px;

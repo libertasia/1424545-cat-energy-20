@@ -1,3 +1,38 @@
+.form__application-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $large) {
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 69px;
+  }
+}
+
+.form__required {
+  min-height: 77px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $medium) {
+    min-height: 52px;
+    margin-bottom: 72px;
+    padding: 0 71px;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  @media (min-width: $large) {
+    margin-bottom: 82px;
+    padding: 0 111px;
+  }
+}
+
 .form__button {
   font-weight: normal;
   font-size: 16px;
@@ -5,7 +40,27 @@
   text-transform: uppercase;
   color: $basic-white;
   background-color: $basic-bright;
-  margin: 0 20px 21px 20px;
+  width: 266px;
+  min-height: 26px;
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $medium) {
+    width: 256px;
+    margin: 0;
+    margin-right: 61px;
+    padding: 13px;
+  }
+
+  @media (min-width: $large) {
+    width: 542px;
+    margin-right: 81px;
+  }
 }
 
 .form__required-text {
@@ -13,5 +68,4 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 1.14;
-  margin: 0 20px 32px 20px;
 }

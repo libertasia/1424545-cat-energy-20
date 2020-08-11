@@ -1,7 +1,33 @@
+.program-selection {
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $large) {
+    margin-bottom: 82px;
+  }
+}
+
 .program-selection__title {
   font-weight: normal;
   font-size: 36px;
-  margin: 27px 20px 37px 20px;
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0 20px;
+  padding-top: 27px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 54px;
+    padding: 0 29px;
+  }
+
+  @media (min-width: $large) {
+    padding: 0 110px;
+    margin-bottom: 56px;
+  }
 }
 
 .program-selection__text {
@@ -9,5 +35,18 @@
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
-  margin: 0 20px 39px 20px;
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0 20px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 66px;
+    padding: 0;
+    padding-left: 70px;
+    padding-right: 345px;
+  }
+
+  @media (min-width: $medium) {
+    padding: 0 110px;
+  }
 }

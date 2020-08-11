@@ -1,6 +1,34 @@
 .example {
   background-color: $example-background-grey;
+  min-height: 647px;
   padding: 27px 20px 31px 20px;
+  margin: 0 auto;
+
+  @media (min-width: $medium) {
+    background-color: $basic-white;
+    min-height: 739px;
+    padding: 43px 30px 68px 30px;
+  }
+
+  @media (min-width: $large) {
+    min-height: 598px;
+    padding: 0;
+    padding-top: 69px;
+  }
+}
+
+.example__wrapper {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $large) {
+    background-color: $basic-grey;
+    padding: 70px 110px 68px 110px;
+    min-height: 324px;
+    flex-direction: row;
+  }
 }
 
 .example__title {
@@ -9,6 +37,16 @@
   line-height: 1.1;
   margin: 0;
   margin-bottom: 33px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $large) {
+    margin-bottom: 76px;
+    padding: 0;
+    padding-left: 110px;
+  }
 }
 
 .example__text {
@@ -18,13 +56,89 @@
   line-height: 1.29;
   color: $special-dark-grey;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 25px;
+  min-width: 279px;
+  min-height: 108px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+
+  @media (min-width: $medium) {
+    width: 708px;
+    min-height: 72px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $large) {
+    min-width: 436px;
+    min-height: 96px;
+    margin-bottom: 69px;
+  }
+}
+
+.example__description-wrapper {
+  margin: 0 auto;
+  margin-bottom: 42px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 51px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $large) {
+    max-width: 436px;
+    margin: 0;
+    margin-right: 134px;
+    flex-direction: column;
+  }
+}
+
+.example__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: $medium) {
+    margin-right: 167px;
+  }
+
+  @media (min-width: $large) {
+    margin: 0;
+    margin-bottom: 35px;
+  }
+}
+
+.example__list-item {
+  min-width: 124px;
+  min-height: 56px;
+  margin: 0;
+  margin-right: 32px;
+  flex-grow: 1;
+  text-align: center;
+
+  @media (min-width: $medium) {
+    min-width: 162px;
+    min-height: 72px;
+    margin-right: 42px;
+  }
+}
+
+.example__list-item:nth-child(2n) {
+  margin-right: 0;
+  justify-content: flex-end;
 }
 
 .example__food {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.43;
+  text-align: center;
   margin: 0;
-  margin-bottom: 301px;
 }

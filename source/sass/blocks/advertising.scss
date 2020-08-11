@@ -1,5 +1,19 @@
 .advertising {
-  margin: 0 20px 35px 20px;
+  margin: 0;
+  margin-top: 39px;
+  min-height: 289px;
+
+  @media (min-width: $medium) {
+    width: 708px;
+    margin-top: 69px;
+    min-height: 200px;
+  }
+
+  @media (min-width: $large) {
+    width: 245px;
+    margin: 0;
+    min-height: 289px;
+  }
 }
 
 .advertising__text {
@@ -9,8 +23,22 @@
   line-height: 1.25;
   color: $basic-white;
   background-color: $basic-bright;
-  padding: 186px 61px 43px 58px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
+  margin: 0;
+  padding: 186px 61px 43px 58px;
+
+  @media (min-width: $medium) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 71px 124px 69px 423px;
+  }
+
+  @media (min-width: $large) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 184px 43px 42px 41px;
+  }
 }
