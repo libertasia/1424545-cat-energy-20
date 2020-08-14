@@ -6,10 +6,18 @@
   min-height: 184px;
   margin: 0;
   padding-bottom: 25px;
-  border-bottom: 1px solid $special-grey-2;
   text-align: center;
   justify-content: flex-end;
   align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid $special-grey-2;
+    width: 100vw;
+    margin-bottom: 184px;
+    left: 0;
+  }
 
   @media (min-width: $medium) {
     background-color: $basic-white;
@@ -18,6 +26,10 @@
     margin-top: 141px;
     padding-bottom: 38px;
     border: 2px solid $basic-grey;
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $large) {
