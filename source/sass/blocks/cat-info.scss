@@ -45,6 +45,11 @@
   color: $special-dark-grey;
   margin: 0;
   margin-right: 13px;
+
+  @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .cat-info__input {
@@ -59,6 +64,8 @@
   border: 1px solid $border-color;
 
   @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 1.5;
     height: 30px;
     padding: 10px 19px 12px 19px;
   }

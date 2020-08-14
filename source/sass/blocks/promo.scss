@@ -33,6 +33,8 @@
   margin-bottom: 25px;
 
   @media (min-width: $medium) {
+    font-size: 60px;
+    line-height: 1;
     background-color: $basic-white;
     margin-bottom: 41px;
     padding: 0 207px 0 87px;
@@ -52,6 +54,8 @@
   margin-bottom: 302px;
 
   @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 1;
     background-color: $basic-white;
     margin-bottom: 49px;
     padding: 0 88px 0 88px;
@@ -70,15 +74,18 @@
   background-color: $basic-bright;
   color: $basic-white;
   text-decoration: none;
+  text-align: center;
   margin: 0;
   padding: 7px 44px 7px 44px;
   min-height: 26px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   justify-self: flex-end;
 
   @media (min-width: $medium) {
+    font-size: 20px;
     margin-left: 82px;
     padding: 14px 26px 14px 26px;
     width: 192px;

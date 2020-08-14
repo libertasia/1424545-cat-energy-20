@@ -56,4 +56,9 @@
   line-height: 1.125;
   text-transform: uppercase;
   color: $special-dark-grey-2;
+
+  @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }

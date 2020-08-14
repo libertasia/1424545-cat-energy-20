@@ -31,6 +31,8 @@
   padding-right: 160px;
 
   @media (min-width: $medium) {
+    font-size: 36px;
+    line-height: 1;
     margin-bottom: 57px;
     padding-left: 69px;
     padding-right: 517px;
@@ -74,7 +76,7 @@
     padding-left: 59px;
   }
 
-  @media (min-width: $medium) {
+  @media (min-width: $large) {
     width: 246px;
   }
 }
@@ -86,5 +88,10 @@
 .extra__label {
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.125;
+  line-height: 1.12;
+
+  @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }

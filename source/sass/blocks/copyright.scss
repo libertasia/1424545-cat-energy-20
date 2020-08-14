@@ -4,4 +4,11 @@
 
 .copyright__logo {
   display: block;
+  width: 280px;
+  height: 34px;
+
+  @media (min-width: $medium) {
+    width: 163px;
+    margin-left: auto;
+  }
 }

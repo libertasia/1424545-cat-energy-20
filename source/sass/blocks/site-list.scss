@@ -5,6 +5,16 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $medium) {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  @media (min-width: $large) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .site-list__item {

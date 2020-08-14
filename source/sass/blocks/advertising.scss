@@ -31,12 +31,14 @@
   padding: 186px 61px 43px 58px;
 
   @media (min-width: $medium) {
+    text-align: left;
     display: flex;
     flex-wrap: wrap;
     padding: 71px 124px 69px 423px;
   }
 
   @media (min-width: $large) {
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     padding: 184px 43px 42px 41px;

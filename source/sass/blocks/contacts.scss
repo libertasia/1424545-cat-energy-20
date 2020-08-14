@@ -28,6 +28,8 @@
   flex-wrap: wrap;
 
   @media (min-width: $medium) {
+    font-size: 36px;
+    line-height: 1;
     width: 512px;
     margin: 0;
     margin-bottom: 76px;
@@ -88,6 +90,8 @@
   margin-right: 9px;
 
   @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 1.5;
     margin-right: 14px;
   }
 }
@@ -100,6 +104,11 @@
   text-transform: uppercase;
   color: $special-dark-grey;
   border: 1px solid $special-grey;
+
+  @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .contacts__email {
@@ -142,4 +151,9 @@
   line-height: 1.125;
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }

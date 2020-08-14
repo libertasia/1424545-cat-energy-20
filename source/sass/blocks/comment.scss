@@ -27,6 +27,8 @@
   padding-right: 180px;
 
   @media (min-width: $medium) {
+    font-size: 36px;
+    line-height: 1;
     margin-bottom: 76px;
     padding-left: 69px;
     padding-right: 517px;
@@ -54,6 +56,8 @@
   resize: none;
 
   @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 1.5;
     margin: 0;
     margin-left: 70px;
     margin-right: 67px;

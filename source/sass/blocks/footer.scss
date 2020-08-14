@@ -1,35 +1,28 @@
 .footer {
   background-color: $basic-grey;
-  width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: $medium) {
-    width: 768px;
-  }
-
-  @media (min-width: $large) {
-    width: 1440px;
-  }
 }
 
 .footer__wrapper {
-  min-width: 281px;
-  margin: 0 auto;
-  padding: 39px 20px 22px 19px;
+  padding-top: 39px;
+  padding-bottom: 22px;
+  min-height: 175px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: $medium) {
-    min-width: 707px;
-    padding: 53px 31px 62px 30px;
+    padding-top: 53px;
+    padding-bottom: 62px;
+    min-height: 35px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
   }
 
   @media (min-width: $large) {
-    min-width: 1220px;
-    padding: 59px 110px 56px 110px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    min-height: 37px;
   }
 }
 
@@ -37,29 +30,33 @@
   margin: auto;
   margin-top: 0;
   margin-bottom: 32px;
-  width: 128px;
-  height: 24px;
 
   @media (min-width: $medium) {
+    width: 236px;
     margin: 0;
-    margin-right: 156px;
   }
 
   @media (min-width: $large) {
-    margin-right: 413px;
+    width: 406px;
   }
 }
 
 .footer__social {
-  min-height: 63px;
+  @media (min-width: $medium) {
+    width: 236px;
+  }
+
+  @media (min-width: $large) {
+    width: 406px;
+  }
 }
 
 .footer__copyright {
   @media (min-width: $medium) {
-    margin-left: 131px;
+    width: 236px;
   }
 
   @media (min-width: $large) {
-    margin-left: 387px;
+    width: 406px;
   }
 }

@@ -3,6 +3,18 @@
   flex-wrap: wrap;
   flex-direction: row;
   width: 140px;
+  margin: 0 auto;
+
+  @media (min-width: $medium) {
+    width: 250px;
+    min-height: 32px;
+    align-items: center;
+    border-bottom: 1px solid $special-grey;
+  }
+
+  @media (min-width: $large) {
+    width: 169px;
+  }
 }
 
 .item-description__title {
@@ -12,6 +24,11 @@
   line-height: 1.33;
   color: $special-dark-grey;
   flex-basis: 50%;
+
+  @media (min-width: $medium) {
+    font-size: 16px;
+    line-height: 1;
+  }
 }
 
 .item-description__text {
@@ -24,4 +41,9 @@
   margin-left: auto;
   flex-basis: 50%;
   text-align: right;
+
+  @media (min-width: $medium) {
+    font-size: 16px;
+    line-height: 1;
+  }
 }
