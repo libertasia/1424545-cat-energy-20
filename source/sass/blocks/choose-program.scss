@@ -47,14 +47,15 @@
 .choose-program__item {
   min-height: 30px;
   padding: 0;
-  padding-left: 45px;
+/*  padding-left: 45px;*/
   margin: 0;
   margin-bottom: 13px;
+//  align-content: center;
 
   @media (min-width: $medium) {
     min-height: 40px;
-    padding-left: 88px;
-    padding-right: 25px;
+    padding-left: 28px;
+    padding-right: 28px;
   }
 }
 
@@ -68,9 +69,79 @@
   line-height: 1.125;
   text-transform: uppercase;
   color: $special-dark-grey-2;
+  padding-left: 45px;
+  position: relative;
+  align-self: center;
+
 
   @media (min-width: $medium) {
     font-size: 20px;
     line-height: 1.5;
+    padding-left: 60px;
+  }
+}
+
+.choose-program__radio-button {
+  position: absolute;
+/*  z-index: -1;
+  opacity: 0;*/
+  --webkit-appearance: none;
+  --moz-appearance: none;
+  appearance: none;
+}
+
+.choose-program__check-box {
+  position: absolute;
+//  margin-right: -15px;
+  top: 0;
+  left: 0;
+  height: 29px;
+  width: 29px;
+  background-color: $basic-white;
+  border: 1px solid $special-grey;
+  border-radius: 50%;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 8px;
+    left: 8px;
+    height: 14px;
+    width: 14px;
+    background-color: $basic-bright;
+    border: none;
+    border-radius: 50%;
+  }
+
+  @media (min-width: $medium) {
+    top: 0;
+    left: 0;
+    height: 39px;
+    width: 39px;
+    background-color: $basic-white;
+    border: 1px solid $special-grey;
+    border-radius: 50%;
+    display: inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 11px;
+      left: 11px;
+      height: 18px;
+      width: 18px;
+      background-color: $basic-bright;
+      border: none;
+      border-radius: 50%;
+    }
+  }
+}
+
+.choose-program__radio-button:checked + .choose-program__check-box {
+  &::after {
+    display: block;
   }
 }

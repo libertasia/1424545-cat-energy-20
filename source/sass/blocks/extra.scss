@@ -104,17 +104,15 @@
   margin: 0;
   margin-bottom: 13px;
   padding: 0;
-  padding-left: 46px;
 
   @media (min-width: $medium) {
-    width: 255px;
+    width: 50%;
     min-height: 40px;
     margin-bottom: 32px;
-    padding-left: 59px;
   }
 
   @media (min-width: $large) {
-    width: 246px;
+    width: 25%;
   }
 }
 
@@ -126,9 +124,66 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 1.12;
+  position: relative;
+  padding-left: 46px;
 
   @media (min-width: $medium) {
     font-size: 20px;
     line-height: 1.5;
+    padding-left: 59px;
+  }
+}
+
+.extra__checkbox {
+  position: absolute;
+/*  z-index: -1;
+  opacity: 0;*/
+  --webkit-appearance: none;
+  --moz-appearance: none;
+  appearance: none;
+}
+
+.extra__check-box {
+  position: absolute;
+//  margin-right: -15px;
+  top: 0;
+  left: 0;
+  height: 29px;
+  width: 29px;
+  background-color: $basic-white;
+  border: 1px solid $special-grey;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 8px;
+    left: 6px;
+    height: 14px;
+    width: 18px;
+    background-image: url("../img/icon-tick-checked.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $medium) {
+    top: 0;
+    left: 0;
+    height: 39px;
+    width: 39px;
+    background-color: $basic-white;
+    border: 1px solid $special-grey;
+    display: inline-block;
+
+    &::after {
+      top: 13px;
+      left: 11px;
+    }
+  }
+}
+
+.extra__checkbox:checked + .extra__check-box {
+  &::after {
+    display: block;
   }
 }
