@@ -1,34 +1,46 @@
 .choose-program {
   border: none;
-  min-height: 115px;
-  margin: 20px 20px 22px 20px;
+  box-sizing: border-box;
+  border-top: 1px solid $line-color; //Исправить, бордер не тянется
+  border-bottom: 1px solid $line-color;
+  margin: 0;
+  margin-bottom: 26px;
   padding: 0;
 
   @media (min-width: $medium) {
-    min-height: 196px;
-    margin: 0 67px 75px 71px;
+    border: none;
+    margin-bottom: 75px;
+    padding-left: 41px;
+    padding-right: 37px;
   }
 
   @media (min-width: $large) {
     margin: 0;
-    margin-right: 110px;
+    padding: 0;
   }
 }
 
 .choose-program__list {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  padding-top: 20px;
+  padding-bottom: 22px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 
   @media (min-width: $medium) {
-    min-height: 146px;
     width: 630px;
     padding: 0;
     padding-top: 25px;
     padding-bottom: 25px;
+    border: 1px solid $border-color;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $large) {
+    width: 570px;
   }
 }
 

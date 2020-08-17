@@ -13,7 +13,7 @@
   min-height: 77px;
   margin: 0 auto;
   margin-bottom: 32px;
-  padding: 0 20px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -22,14 +22,14 @@
   @media (min-width: $medium) {
     min-height: 52px;
     margin-bottom: 72px;
-    padding: 0 71px;
+    padding: 0 41px;
     flex-direction: row;
     align-items: baseline;
   }
 
   @media (min-width: $large) {
     margin-bottom: 82px;
-    padding: 0 111px;
+    padding: 0 1px;
   }
 }
 

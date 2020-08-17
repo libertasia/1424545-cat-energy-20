@@ -1,17 +1,17 @@
 .comment {
-  width: 320px;
+  width: 280px;
   min-height: 209px;
   margin: 0 auto;
   margin-bottom: 27px;
 
   @media (min-width: $medium) {
-    width: 768px;
+    width: 708px;
     min-height: 286px;
     margin-bottom: 65px;
   }
 
   @media (min-width: $large) {
-    width: 1440px;
+    width: 1220px;
     margin-bottom: 67px;
   }
 }
@@ -23,20 +23,60 @@
   margin: 0;
   margin-bottom: 34px;
   padding: 0;
-  padding-left: 19px;
-  padding-right: 180px;
 
   @media (min-width: $medium) {
     font-size: 36px;
     line-height: 1;
     margin-bottom: 76px;
-    padding-left: 69px;
-    padding-right: 517px;
+    padding-left: 39px;
+    padding-right: 37px;
   }
 
   @media (min-width: $large) {
-    padding-left: 110px;
-    padding-right: 1148px;
+    padding: 0;
+  }
+}
+
+.comment__title-line {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    border-bottom: 2px solid $basic-bright;
+    width: 100vw;
+    margin-top: 0;
+    margin-left: 22px;
+    left: 100%;
+  }
+
+  @media (min-width: $medium) {
+    &::before {
+      margin-left: 38px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 60%;
+      border-bottom: 2px solid $basic-bright;
+      width: 100vw;
+      margin-top: 0;
+      margin-right: 39px;
+      right: 100%;
+    }
+  }
+
+  @media (min-width: $large) {
+    &::before {
+      margin-left: 40px;
+    }
+
+    &::after {
+      margin-right: 40px;
+    }
   }
 }
 
@@ -48,7 +88,7 @@
   text-transform: uppercase;
   color: $special-dark-grey;
   border: 1px solid $border-color;
-  margin: 0 20px;
+  margin: 0;
   padding: 13px 12px 13px 15px;
   width: 280px;
   height: 124px;
@@ -59,8 +99,8 @@
     font-size: 20px;
     line-height: 1.5;
     margin: 0;
-    margin-left: 70px;
-    margin-right: 67px;
+    margin-left: 40px;
+    margin-right: 37px;
     padding: 10px 19px;
     width: 631px;
     height: 154px;
@@ -68,6 +108,6 @@
 
   @media (min-width: $large) {
     width: 1220px;
-    margin: 0 110px;
+    margin: 0;
   }
 }

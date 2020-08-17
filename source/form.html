@@ -37,7 +37,7 @@
 
     <main class="main">
       <section class="program-selection">
-        <div class="program-selection__wrapper">
+        <div class="program-selection__wrapper container">
           <h1 class="program-selection__title">
             Подбор программы
           </h1>
@@ -85,7 +85,10 @@
 
             <fieldset class="form__contacts contacts">
               <legend class="contacts__title">
-                Контактные данные (владельца кота)
+                <span class="contacts__title-line">
+                  Контактные данные<br>
+                  (владельца кота)
+                </span>
               </legend>
               <div class="contacts__wrapper">
                 <p class="contacts__item">
@@ -101,7 +104,9 @@
 
             <div class="form__comment comment">
               <h2 class="comment__title">
-                Комментарий
+                <span class="comment__title-line">
+                  Комментарий
+                </span>
               </h2>
               <label class="visually-hidden" for="comment-text">Напишите свой комментарий</label>
               <textarea class="comment__text" id="comment-text" name="comment-text">Расскажите обо всех повадках кота</textarea>
@@ -109,7 +114,9 @@
 
             <fieldset class="form__extra extra">
               <legend class="extra__title">
+                <span class="extra__title-line">
                 Дополнительно
+                </span>
               </legend>
               <ul class="extra__list">
                 <li class="extra__item">

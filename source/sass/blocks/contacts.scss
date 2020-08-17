@@ -1,6 +1,5 @@
 .contacts {
   border: none;
-  margin: 0;
   margin-bottom: 27px;
   padding: 0;
   display: flex;
@@ -22,8 +21,7 @@
   line-height: 1.1;
   margin: 0;
   margin-bottom: 32px;
-  padding: 26px 114px 0 19px;
-  width: 187px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
 
@@ -33,11 +31,61 @@
     width: 512px;
     margin: 0;
     margin-bottom: 76px;
-    padding: 0 187px 0 69px;
+    padding: 0;
+    padding-left: 39px;
+    padding-right: 39px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $large) {
-    padding: 0 818px 0 110px;
+    padding: 0;
+  }
+}
+
+.contacts__title-line {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    border-bottom: 2px solid $basic-bright;
+    width: 100vw;
+    margin-top: 0;
+    margin-left: 15px;
+    left: 100%;
+  }
+
+  @media (min-width: $medium) {
+    &::before {
+      top: 60%;
+      margin-left: 42px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 60%;
+      border-bottom: 2px solid $basic-bright;
+      width: 100vw;
+      margin-top: 0;
+      margin-right: 39px;
+      right: 100%;
+    }
+  }
+
+  @media (min-width: $large) {
+    &::before {
+      margin-left: 40px;
+    }
+
+    &::after {
+      margin-right: 40px;
+    }
   }
 }
 
@@ -46,37 +94,41 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 1219px;
+    justify-content: space-between;
+    width: 1220px;
     padding: 0;
-    padding-right: 110px;
-    padding-left: 111px;
   }
 }
 
 .contacts__item {
   margin: 0;
-  padding: 0 20px 14px 20px;
+  margin-bottom: 14px;
+  padding: 0;
   min-height: 45px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
 
   @media (min-width: $medium) {
     min-height: 52px;
-    padding: 0 65px 20px 71px;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-left: 38px;
+    padding-right: 35px;
+    align-content: center;
   }
 
   @media (min-width: $large) {
     padding: 0;
-    padding-right: 78px;
+    margin: 0;
+    margin-right: 78px;
   }
 }
 
 .contacts__item:last-child {
   @media (min-width: $large) {
-    padding-right: 0;
+    margin-right: 0;
   }
 }
 
@@ -112,7 +164,7 @@
 }
 
 .contacts__email {
-  width: 151px;
+  width: 150px;
   height: 17px;
   padding: 13px 51px 15px 15px;
 

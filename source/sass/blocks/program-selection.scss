@@ -1,5 +1,4 @@
 .program-selection {
-  margin: 0 auto;
   margin-bottom: 32px;
 
   @media (min-width: $medium) {
@@ -16,19 +15,19 @@
   font-size: 36px;
   margin: 0;
   margin-bottom: 37px;
-  padding: 0 20px;
+  padding: 0;
   padding-top: 27px;
 
   @media (min-width: $medium) {
     font-size: 60px;
     line-height: 1;
     margin-bottom: 54px;
-    padding: 0 29px;
+    padding-top: 65px;
   }
 
   @media (min-width: $large) {
-    padding: 0 110px;
     margin-bottom: 56px;
+    padding-top: 77px;
   }
 }
 
@@ -39,18 +38,18 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 39px;
-  padding: 0 20px;
+  padding: 0;
 
   @media (min-width: $medium) {
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 66px;
     padding: 0;
-    padding-left: 70px;
-    padding-right: 345px;
+    padding-left: 40px;
+    padding-right: 37px;
   }
 
-  @media (min-width: $medium) {
-    padding: 0 110px;
+  @media (min-width: $large) {
+    padding: 0;
   }
 }
