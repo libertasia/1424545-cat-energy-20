@@ -1,8 +1,6 @@
 .choose-program {
   border: none;
   box-sizing: border-box;
-  border-top: 1px solid $line-color; //Исправить, бордер не тянется
-  border-bottom: 1px solid $line-color;
   margin: 0;
   margin-bottom: 26px;
   padding: 0;
@@ -59,8 +57,44 @@
   }
 }
 
+.choose-program__item:first-child {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid $line-color;
+    width: 100vw;
+    margin-top: -20px;
+    left: calc(50% - 50vw);
+  }
+
+  @media (min-width: $medium) {
+    &::before {
+      display: none;
+    }
+  }
+}
+
 .choose-program__item:last-child {
   margin-bottom: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid $line-color;
+    width: 100vw;
+    bottom: 0;
+    margin-bottom: -22px;
+    left: calc(50% - 50vw);
+  }
+
+  @media (min-width: $medium) {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .choose-program__label {

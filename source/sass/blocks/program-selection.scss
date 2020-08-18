@@ -1,7 +1,9 @@
 .program-selection {
   margin-bottom: 32px;
+  border-top: 1px solid $line-color;
 
   @media (min-width: $medium) {
+    border: none;
     margin-bottom: 72px;
   }
 

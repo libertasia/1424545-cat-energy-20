@@ -1,35 +1,78 @@
 .header {
+  background-color: $basic-white;
+}
+
+.header__wrapper {
   display: flex;
   flex-direction: column;
-  width: 280px;
-  margin: 0 auto;
-  padding: 11px 20px 18px 20px;
-  background-color: $basic-white;
+  padding-top: 11px;
+  padding-bottom: 0;
   color: $basic-black;
 
   @media (min-width: $medium) {
-    width: 708px;
     flex-direction: row;
-    align-items: baseline;
-    padding: 24px 30px 62px 30px;
+    align-items: center;
+    padding-top: 25px;
   }
 
   @media (min-width: $large) {
     width: 1220px;
     justify-content: space-between;
-    padding: 53px 110px 32px 110px;
+    padding-top: 54px;
   }
 }
 
 .header__logo {
-  min-height: 66px;
+  width: 191px;
+  height: 38px;
+  padding-bottom: 17px;
 
   @media (min-width: $medium) {
-    min-height: 78px;
+    width: 174px;
+    height: 52px;
     margin-right: 95px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $large) {
-    min-height: 109px;
+    width: 202px;
+    height: 59px;
+    margin-right: 536px;
+  }
+}
+
+.header__logo-image {
+  width: 191px;
+  height: 38px;
+
+  @media (min-width: $medium) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $large) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.header--index {
+  @media (min-width: $large) {
+    background: linear-gradient(to right, $basic-white 50%, $basic-bright 50%);
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50vw;
+      height: 696px;
+      background: $basic-bright;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      z-index: -1;
+      box-sizing: border-box;
+    }
   }
 }

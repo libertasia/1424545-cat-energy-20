@@ -1,16 +1,100 @@
+.main-nav {
+  position: relative;
+  width: auto;
+}
+
 .main-nav__toggle {
+  position: absolute;
+  top: -49px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 18px;
+  background-color: $basic-white;
+  cursor: pointer;
+  border: none;
+
+/*  &:hover,
+  &:active {
+    opacity: 0.3; // В стайлгайде нет, указано просто для примера
+  }*/
+
   @media (min-width: $medium) {
     display: none;
   }
 }
 
-.main-nav__list {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  align-items: center;
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $basic-black;
+  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+  cursor: pointer;
+  border: none;
 
   @media (min-width: $medium) {
-    flex-direction: row;
+    display: none;
   }
+}
+
+.main-nav--closed .main-nav__toggle:active::before {  // В стайлгайде нет, указано просто для примера
+  background-color: fade($basic-black, 30%);
+  box-shadow:
+    0 8px 0 0 fade($basic-black, 30%),
+    0 16px 0 0 fade($basic-black, 30%);
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: -49px;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 18px;
+    height: 2px;
+    background-color: $basic-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade($basic-black, 30%);  // В стайлгайде нет, указано просто для примера
+  }
+}
+
+@media (max-width: $small) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--closed .user-list__item {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
