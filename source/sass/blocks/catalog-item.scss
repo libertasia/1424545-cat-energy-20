@@ -91,4 +91,12 @@
     width: 128px;
     min-height: 20px;
   }
+
+  &:hover {
+    background-color: $bright;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

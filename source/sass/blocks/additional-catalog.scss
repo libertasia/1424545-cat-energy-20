@@ -168,4 +168,12 @@
     padding: 7px 26px 7px 26px;
     align-self: center;
   }
+
+  &:hover {
+    background-color: $bright;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

@@ -9,6 +9,20 @@
   text-align: center;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 26px;
+    left: 125px;
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    fill: #d3d3d3;//разобраться с цветом, почему не работает
+  }
 
   &::after {
     content: "";
@@ -30,6 +44,18 @@
     &::after {
       display: none;
     }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 52px;
+      left: 132px;
+      background-image: url("../img/icon-plus.svg"); //разобраться с цветом, почему не работает
+      background-repeat: no-repeat;
+    }
   }
 
   @media (min-width: $large) {
@@ -37,6 +63,12 @@
     min-height: 387px;
     margin-top: 143px;
     padding-bottom: 40px;
+
+    &::before {
+      content: "";
+      top: 51px;
+      left: 92px;
+    }
   }
 }
 
@@ -126,5 +158,13 @@
 
   @media (min-width: $large) {
     width: 129px;
+  }
+
+  &:hover {
+    background-color: $special-grey-2;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
   }
 }

@@ -20,7 +20,6 @@
   flex-direction: column;
   text-align: center;
   color: $basic-white;
-  text-transform: uppercase;
 
   @media (min-width: $medium) {
     color: $basic-black;
@@ -49,7 +48,7 @@
     line-height: 1;
     margin-bottom: 41px;
     padding-left: 87px;
-    //  padding-right: 207px;
+    padding-right: 207px;
   }
 
   @media (min-width: $large) {
@@ -61,6 +60,7 @@
 
 .promo__description-slogan {
   font-weight: normal;
+  text-transform: uppercase;
   font-size: 14px;
   margin: 0;
   margin-bottom: 302px;
@@ -85,6 +85,7 @@
   background-color: $basic-bright;
   color: $basic-white;
   text-decoration: none;
+  text-transform: uppercase;
   text-align: center;
   margin: 0;
   padding: 7px 44px 7px 44px;
@@ -100,5 +101,13 @@
     margin-left: 82px;
     padding: 14px 26px 14px 26px;
     width: 192px;
+  }
+
+  &:hover {
+    background-color: $bright;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

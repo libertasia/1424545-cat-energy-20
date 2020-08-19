@@ -162,6 +162,18 @@
     font-size: 20px;
     line-height: 1.5;
   }
+
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+
+  &:active {
+    border: 2px solid $special-dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $status-error;
+  }
 }
 
 .contacts__email {

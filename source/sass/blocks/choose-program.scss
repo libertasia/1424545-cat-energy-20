@@ -179,3 +179,15 @@
     display: block;
   }
 }
+
+.choose-program__radio-button:focus + .choose-program__check-box {
+  &::after {
+    display: none;
+  }
+}
+
+.choose-program__radio-button:checked:focus + .choose-program__check-box {
+  &::after {
+    display: block;
+  }
+}

@@ -73,6 +73,18 @@
     height: 52px;
     padding: 10px 19px 12px 19px;
   }
+
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+
+  &:active {
+    border: 2px solid $special-dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $status-error;
+  }
 }
 
 .cat-info__name {
