@@ -1,9 +1,8 @@
 .slider {
   min-height: 289px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
 
   @media (min-width: $medium) {
     min-height: 354px;
@@ -15,22 +14,69 @@
   }
 }
 
-.slider__button {
-  font-family: inherit;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  text-transform: uppercase;
-  border: none;
-  color: $basic-black;
-  background-color: inherit;
+.slider__images {
+  position: relative;
+}
+
+.slider__image {
+  margin: 0 -20px;
 
   @media (min-width: $medium) {
-    font-size: 20px;
-    line-height: 1.5;
+    margin: 0;
+  }
+
+  &--before {
+    @media (min-width: $medium) {
+      display: block;
+      width: 50%;
+      left: 0;
+    }
+
+    @media (min-width: $large) {
+      width: 52.9%;
+    }
+  }
+
+  &--after {
+    display: none;
+    position: absolute;
+    top: 0;
+
+    @media (min-width: $medium) {
+      display: block;
+      width: 50%;
+      right: 0;
+    }
+
+    @media (min-width: $large) {
+      width: 47.1%;
+      top: -1px;
+    }
   }
 }
 
-.slider__switch {
-  //
+.slider__image-before {
+  object-fit: none;
+  object-position: left center;
+  height: 100%;
+  max-width: 100%;
+}
+
+.slider__image-after {
+  object-fit: none;
+  object-position: right center;
+  height: 100%;
+  max-width: 100%;
+}
+
+.slider__control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 205px;
+
+  @media (min-width: $medium) {
+    width: 570px;
+  }
 }

@@ -62,51 +62,52 @@
   line-height: 1.12;
   text-transform: uppercase;
   color: $special-dark-grey;
-  height: 19px;
+  height: 45px;
   padding: 13px 16px 13px 16px;
   border: 1px solid $border-color;
+  box-sizing: border-box;
 
   @media (min-width: $medium) {
     font-size: 20px;
     line-height: 1.5;
-    height: 30px;
+    height: 52px;
     padding: 10px 19px 12px 19px;
   }
 }
 
 .cat-info__name {
-  width: 197px;
+  width: 229px;
 
   @media (min-width: $medium) {
-    width: 529px;
+    width: 567px;
   }
 
   @media (min-width: $large) {
-    width: 468px;
+    width: 506px;
   }
 }
 
 .cat-info__weight {
-  width: 172px;
+  width: 204px;
 
   @media (min-width: $medium) {
-    width: 498px;
+    width: 536px;
   }
 
   @media (min-width: $large) {
-    width: 437px;
+    width: 475px;
   }
 }
 
 .cat-info__age {
-  width: 140px;
+  width: 172px;
 
   @media (min-width: $medium) {
-    width: 459px;
+    width: 497px;
   }
 
   @media (min-width: $large) {
-    width: 398px;
+    width: 436px;
   }
 }
 

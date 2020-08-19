@@ -128,16 +128,17 @@
 
 .example__list-item {
   width: 124px;
-  min-height: 56px;
+  min-height: 64px;
   margin: 0;
   margin-right: 32px;
-  margin-bottom: 11px;
-  flex-grow: 1;
+  margin-bottom: 34px;
   text-align: center;
+  position: relative;
 
   @media (min-width: $medium) {
     width: 162px;
-    min-height: 72px;
+    min-height: 77px;
+    margin-bottom: 0;
     margin-right: 42px;
   }
 }
@@ -183,6 +184,7 @@
 }
 
 .example__food-text {
+  text-transform: uppercase;
   margin: 0;
 
   @media (min-width: $medium) {

@@ -6,10 +6,19 @@
   font-weight: normal;
   font-size: 24px;
   margin: 0;
+  padding: 13px 0;
+  text-transform: uppercase;
+  border: 1px solid $special-grey;
+  border-radius: 3px;
+  box-sizing: border-box;
+  z-index: 1;
+  min-height: 56px;
 
   @media (min-width: $medium) {
     font-size: 30px;
     line-height: 1.23;
+    padding: 15px 0;
+    min-height: 72px;
   }
 }
 
@@ -18,11 +27,36 @@
   font-weight: normal;
   font-size: 12px;
   color: $special-dark-grey;
+  background-color: $example-background-grey;
+  text-align: center;
+  box-sizing: border-box;
   margin: 0;
-  margin-top: 9px;
+  position: absolute;
+  padding: 0 10px;
+  width: 87px;
+  top: 48px;
+  left: 17px;
+  z-index: 2;
 
   @media (min-width: $medium) {
     font-size: 14px;
     line-height: 1;
+    background-color: $basic-white;
+    min-width: 117px;
+    top: 64px;
+    left: 22px;
+
+    &--long {
+      min-width: 147px;
+      left: 7px;
+    }
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $large) {
+    background-color: $basic-grey;
   }
 }

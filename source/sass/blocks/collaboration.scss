@@ -84,3 +84,9 @@
     justify-content: flex-start;
   }
 }
+
+.collaboration__address-break {
+  @media (max-width: $small) {
+    display: none;
+  }
+}

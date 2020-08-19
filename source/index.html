@@ -157,7 +157,7 @@
                 <p class="example-description__title">
                   60 ДНЕЙ
                 </p>
-                <p class="example-description__text">
+                <p class="example-description__text example-description__text--long">
                   затрачено<br>
                   времени
                 </p>
@@ -170,17 +170,28 @@
               </li>
             </ul>
           </div>
+
           <div class="slider">
-            <button class="slider__button button-previous slider__button--current" type="button">
-              Было
-            </button>
-            <button class="slider__button button-next" type="button">
-              Стало
-            </button>
-            <label class="slider__switch toggle">
-              <input class="toggle__switch" type="checkbox" checked>
-              <span class="toggle__slider round"></span>
-            </label>
+            <div class="slider__images">
+              <div class="slider__image slider__image--before">
+                <img class="slider__image-before" src="img/before-mobile@1x.png" alt="Было">
+              </div>
+              <div class="slider__image slider__image--after">
+                <img class="slider__image-after" src="img/after-mobile@1x.png" alt="Стало">
+              </div>
+            </div>
+
+            <div class="slider__control slider-control">
+              <button class="slider-control__button button-previous slider-control__button--current" type="button">
+                Было
+              </button>
+              <div class="slider-control__scale">
+                <button class="slider-control__toggle" type="button"></button>
+              </div>
+              <button class="slider-control__button button-next" type="button">
+                Стало
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -196,6 +207,7 @@
             <p class="collaboration__address">
               ул. Большая<br>
               Конюшенная, д. 19/8<br>
+              <span class="collaboration__address-break"><br></span>
               Санкт-Петербург
             </p>
           </div>

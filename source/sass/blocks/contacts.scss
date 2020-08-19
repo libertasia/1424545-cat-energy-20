@@ -156,6 +156,7 @@
   text-transform: uppercase;
   color: $special-dark-grey;
   border: 1px solid $special-grey;
+  box-sizing: border-box;
 
   @media (min-width: $medium) {
     font-size: 20px;
@@ -164,36 +165,37 @@
 }
 
 .contacts__email {
-  width: 150px;
-  height: 17px;
-  padding: 13px 51px 15px 15px;
+  width: 219px;
+  height: 45px;
+  padding: 13px 35px 15px 15px;
 
   @media (min-width: $medium) {
-    width: 226px;
-    height: 32px;
-    padding: 10px 302px 10px 21px;
+    width: 551px;
+    height: 52px;
+    padding: 10px 38px 10px 21px;
   }
 
   @media (min-width: $large) {
-    width: 201px;
-    padding: 10px 266px 10px 19px;
+    width: 486px;
+    padding: 10px 38px 10px 19px;
   }
 }
 
 .contacts__phone {
-  width: 118px;
-  height: 17px;
-  padding: 13px 68px 15px 16px;
+  width: 204px;
+  height: 45px;
+  padding: 13px 33px 15px 16px;
+  position: relative;
 
   @media (min-width: $medium) {
-    width: 221px;
-    height: 32px;
-    padding: 10px 293px 10px 21px;
+    width: 535px;
+    height: 52px;
+    padding: 10px 37px 10px 21px;
   }
 
   @media (min-width: $large) {
-    width: 196px;
-    padding: 10px 258px 10px 18px;
+    width: 472px;
+    padding: 10px 37px 10px 18px;
   }
 }
 
