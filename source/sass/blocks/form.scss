@@ -13,7 +13,7 @@
   min-height: 77px;
   margin: 0 auto;
   margin-bottom: 32px;
-  padding: 0 20px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -22,26 +22,28 @@
   @media (min-width: $medium) {
     min-height: 52px;
     margin-bottom: 72px;
-    padding: 0 71px;
+    padding: 0 41px;
     flex-direction: row;
     align-items: baseline;
   }
 
   @media (min-width: $large) {
     margin-bottom: 82px;
-    padding: 0 111px;
+    padding: 0 1px;
   }
 }
 
 .form__button {
+  font-family: inherit;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
   color: $basic-white;
   background-color: $basic-bright;
-  width: 266px;
-  min-height: 26px;
+  border: none;
+  width: 280px;
+  min-height: 40px;
   margin: 0;
   margin-bottom: 21px;
   padding: 7px;
@@ -49,17 +51,29 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 
   @media (min-width: $medium) {
-    width: 256px;
+    font-size: 20px;
+    width: 282px;
+    min-height: 52px;
     margin: 0;
     margin-right: 61px;
     padding: 13px;
   }
 
   @media (min-width: $large) {
-    width: 542px;
+    width: 568px;
     margin-right: 81px;
+  }
+
+  &:hover {
+    background-color: $bright;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
   }
 }
 
@@ -68,4 +82,9 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 1.14;
+
+  @media (min-width: $medium) {
+    font-size: 16px;
+    line-height: 1;
+  }
 }

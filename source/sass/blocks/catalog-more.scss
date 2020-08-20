@@ -4,22 +4,71 @@
   flex-direction: column;
   width: 280px;
   min-height: 184px;
-  margin: 0 20px 25px 20px;
+  margin: 0;
+  padding-bottom: 25px;
   text-align: center;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 26px;
+    left: 125px;
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    fill: #d3d3d3;//разобраться с цветом, почему не работает
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid $special-grey-2;
+    width: 100vw;
+    margin-bottom: 184px;
+    left: 0;
+  }
 
   @media (min-width: $medium) {
     background-color: $basic-white;
-    width: 324px;
-    min-height: 430px;
-    margin: 0;
+    width: 320px;
+    min-height: 388px;
+    margin-top: 141px;
+    padding-bottom: 38px;
+    border: 2px solid $basic-grey;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 52px;
+      left: 132px;
+      background-image: url("../img/icon-plus.svg"); //разобраться с цветом, почему не работает
+      background-repeat: no-repeat;
+    }
   }
 
   @media (min-width: $large) {
-    width: 245px;
-    min-height: 431px;
-    margin: 0;
+    width: 241px;
+    min-height: 387px;
+    margin-top: 143px;
+    padding-bottom: 40px;
+
+    &::before {
+      content: "";
+      top: 51px;
+      left: 92px;
+    }
   }
 }
 
@@ -38,9 +87,19 @@
   padding: 0;
   padding-top: 79px;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 1.1;
     margin-bottom: 23px;
     padding-top: 161px;
+
+    br {
+      display: block;
+    }
   }
 
   @media (min-width: $large) {
@@ -62,8 +121,18 @@
   margin-bottom: 21px;
   padding: 0;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $medium) {
+    font-size: 16px;
+    line-height: 1.12;
     margin-bottom: 87px;
+
+    br {
+      display: block;
+    }
   }
 }
 
@@ -89,5 +158,13 @@
 
   @media (min-width: $large) {
     width: 129px;
+  }
+
+  &:hover {
+    background-color: $special-grey-2;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
   }
 }

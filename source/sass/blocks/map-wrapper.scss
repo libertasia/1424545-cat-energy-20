@@ -1,13 +1,11 @@
 .map-wrapper {
-  width: 320px;
-  margin: 0 auto;
-  position: relative;
+  background-color: $basic-white;
+}
 
-  @media (min-width: $medium) {
-    width: 768px;
-  }
+.map-wrapper--grey {
+  background-color: $basic-grey;
 
   @media (min-width: $large) {
-    width: 1440px;
+    background-color: $basic-white;
   }
 }

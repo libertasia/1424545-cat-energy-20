@@ -1,31 +1,33 @@
 .example {
   background-color: $example-background-grey;
   min-height: 647px;
-  padding: 27px 20px 31px 20px;
-  margin: 0 auto;
+  padding-top: 27px;
+  padding-bottom: 31px;
 
   @media (min-width: $medium) {
-    background-color: $basic-white;
+    /*  background: -webkit-linear-gradient(bottom, $basic-white 57.26%, $example-background-grey 42.74%);
+    background: -moz-linear-gradient(bottom, $basic-white 57.26%, $example-background-grey 42.74%);*/
+    background: linear-gradient(to bottom, $basic-white 57.26%, $example-background-grey 42.74%);
     min-height: 739px;
-    padding: 43px 30px 68px 30px;
+    padding-top: 43px;
+    padding-bottom: 68px;
+    border-top: 1px solid $line-border-color;
   }
 
   @media (min-width: $large) {
+    background: linear-gradient(to top, $basic-grey 70.43%, $basic-white 29.57%);
     min-height: 598px;
     padding: 0;
-    padding-top: 69px;
+    border: none;
   }
 }
 
 .example__wrapper {
-  margin: 0 auto;
-  padding: 0;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $large) {
-    background-color: $basic-grey;
-    padding: 70px 110px 68px 110px;
+    padding-bottom: 68px;
     min-height: 324px;
     flex-direction: row;
   }
@@ -34,18 +36,21 @@
 .example__title {
   font-weight: normal;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11;
   margin: 0;
   margin-bottom: 33px;
 
   @media (min-width: $medium) {
+    font-size: 60px;
+    line-height: 1;
     margin-bottom: 63px;
   }
 
   @media (min-width: $large) {
-    margin-bottom: 76px;
+    max-width: 436px;
+    margin-bottom: 146px;
     padding: 0;
-    padding-left: 110px;
+    padding-top: 58px;
   }
 }
 
@@ -61,16 +66,21 @@
   min-height: 108px;
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
 
   @media (min-width: $medium) {
+    font-size: 16px;
+    line-height: 1.5;
     width: 708px;
     min-height: 72px;
     margin-bottom: 54px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $large) {
-    min-width: 436px;
+    max-width: 436px;
     min-height: 96px;
     margin-bottom: 69px;
   }
@@ -102,30 +112,32 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $medium) {
-    margin-right: 167px;
+    align-items: flex-start;
   }
 
   @media (min-width: $large) {
-    margin: 0;
-    margin-bottom: 35px;
+    justify-content: flex-start;
   }
 }
 
 .example__list-item {
-  min-width: 124px;
-  min-height: 56px;
+  width: 124px;
+  min-height: 64px;
   margin: 0;
   margin-right: 32px;
-  flex-grow: 1;
+  margin-bottom: 34px;
   text-align: center;
+  position: relative;
 
   @media (min-width: $medium) {
-    min-width: 162px;
-    min-height: 72px;
+    width: 162px;
+    min-height: 77px;
+    margin-bottom: 0;
     margin-right: 42px;
   }
 }
@@ -133,6 +145,16 @@
 .example__list-item:nth-child(2n) {
   margin-right: 0;
   justify-content: flex-end;
+
+  @media (min-width: $medium) {
+    margin-right: 167px;
+    justify-content: center;
+  }
+
+  @media (min-width: $large) {
+    margin-right: 42px;
+    justify-content: flex-end;
+  }
 }
 
 .example__food {
@@ -140,5 +162,40 @@
   font-size: 14px;
   line-height: 1.43;
   text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 1;
+    flex-direction: column;
+  }
+
+  @media (min-width: $large) {
+    margin: 0;
+    margin-top: 55px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.example__food-text {
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $medium) {
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $large) {
+    margin-bottom: 0;
+    margin-right: 63px;
+  }
+}
+
+.example__food-price {
   margin: 0;
 }

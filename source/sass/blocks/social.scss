@@ -1,5 +1,4 @@
 .social {
-  min-width: 118px;
   margin: 0 0 22px;
   display: flex;
 
@@ -9,16 +8,36 @@
 }
 
 .social__list {
+  min-width: 280px;
+  min-height: 20px;
   margin: 0 auto;
   padding: 20px 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  border-top: 1px solid $line-color;
+  border-bottom: 1px solid $line-color;
+
+  @media (min-width: $medium) {
+    padding: 0;
+    min-width: 129px;
+    justify-content: flex-start;
+    border: none;
+  }
 }
 
 .social__item {
-  padding: 10px 10px;
+  padding: 0;
+  padding-right: 36px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  @media (min-width: $medium) {
+    padding-right: 27px;
+  }
 }

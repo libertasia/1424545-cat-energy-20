@@ -1,6 +1,5 @@
 .contacts {
   border: none;
-  margin: 0;
   margin-bottom: 27px;
   padding: 0;
   display: flex;
@@ -22,20 +21,71 @@
   line-height: 1.1;
   margin: 0;
   margin-bottom: 32px;
-  padding: 26px 114px 0 19px;
-  width: 187px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
 
   @media (min-width: $medium) {
+    font-size: 36px;
+    line-height: 1;
     width: 512px;
     margin: 0;
     margin-bottom: 76px;
-    padding: 0 187px 0 69px;
+    padding: 0;
+    padding-left: 39px;
+    padding-right: 39px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $large) {
-    padding: 0 818px 0 110px;
+    padding: 0;
+  }
+}
+
+.contacts__title-line {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    border-bottom: 2px solid $basic-bright;
+    width: 100vw;
+    margin-top: 0;
+    margin-left: 15px;
+    left: 100%;
+  }
+
+  @media (min-width: $medium) {
+    &::before {
+      top: 60%;
+      margin-left: 42px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 60%;
+      border-bottom: 2px solid $basic-bright;
+      width: 100vw;
+      margin-top: 0;
+      margin-right: 39px;
+      right: 100%;
+    }
+  }
+
+  @media (min-width: $large) {
+    &::before {
+      margin-left: 40px;
+    }
+
+    &::after {
+      margin-right: 40px;
+    }
   }
 }
 
@@ -44,37 +94,41 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 1219px;
+    justify-content: space-between;
+    width: 1220px;
     padding: 0;
-    padding-right: 110px;
-    padding-left: 111px;
   }
 }
 
 .contacts__item {
   margin: 0;
-  padding: 0 20px 14px 20px;
+  margin-bottom: 14px;
+  padding: 0;
   min-height: 45px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
 
   @media (min-width: $medium) {
     min-height: 52px;
-    padding: 0 65px 20px 71px;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-left: 38px;
+    padding-right: 35px;
+    align-content: center;
   }
 
   @media (min-width: $large) {
     padding: 0;
-    padding-right: 78px;
+    margin: 0;
+    margin-right: 78px;
   }
 }
 
 .contacts__item:last-child {
   @media (min-width: $large) {
-    padding-right: 0;
+    margin-right: 0;
   }
 }
 
@@ -88,6 +142,8 @@
   margin-right: 9px;
 
   @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 1.5;
     margin-right: 14px;
   }
 }
@@ -100,39 +156,59 @@
   text-transform: uppercase;
   color: $special-dark-grey;
   border: 1px solid $special-grey;
+  box-sizing: border-box;
+
+  @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+
+  &:active {
+    border: 2px solid $special-dark-grey;
+    outline: none;
+  }
+
+  &:invalid {
+    border: 2px solid $status-error;
+  }
 }
 
 .contacts__email {
-  width: 151px;
-  height: 17px;
-  padding: 13px 51px 15px 15px;
+  width: 219px;
+  height: 45px;
+  padding: 13px 35px 15px 15px;
 
   @media (min-width: $medium) {
-    width: 226px;
-    height: 32px;
-    padding: 10px 302px 10px 21px;
+    width: 551px;
+    height: 52px;
+    padding: 10px 38px 10px 21px;
   }
 
   @media (min-width: $large) {
-    width: 201px;
-    padding: 10px 266px 10px 19px;
+    width: 486px;
+    padding: 10px 38px 10px 19px;
   }
 }
 
 .contacts__phone {
-  width: 118px;
-  height: 17px;
-  padding: 13px 68px 15px 16px;
+  width: 204px;
+  height: 45px;
+  padding: 13px 33px 15px 16px;
+  position: relative;
 
   @media (min-width: $medium) {
-    width: 221px;
-    height: 32px;
-    padding: 10px 293px 10px 21px;
+    width: 535px;
+    height: 52px;
+    padding: 10px 37px 10px 21px;
   }
 
   @media (min-width: $large) {
-    width: 196px;
-    padding: 10px 258px 10px 18px;
+    width: 472px;
+    padding: 10px 37px 10px 18px;
   }
 }
 
@@ -142,4 +218,9 @@
   line-height: 1.125;
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }

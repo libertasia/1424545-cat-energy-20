@@ -8,13 +8,15 @@
   margin-bottom: 13px;
 
   @media (min-width: $medium) {
+    font-size: 20px;
     margin-bottom: 27px;
     padding: 0;
+    padding-top: 26px;
     padding-left: 38px;
   }
 
   @media (min-width: $large) {
-    margin-bottom: 27px;
+    margin: 0;
     padding: 0;
   }
 }
@@ -36,10 +38,11 @@
 
   @media (min-width: $large) {
     width: 286px;
-    margin-bottom: 24px;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: 40px;
     padding: 0;
+    align-items: baseline;
   }
 }
 
@@ -49,7 +52,18 @@
   line-height: 1;
   color: $special-dark-grey;
   flex-basis: 50%;
+
+  @media (min-width: $medium) {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+  }
+
+  @media (min-width: $large) {
+    text-align: left;
+  }
 }
+
 
 .add-catalog-item__price {
   font-weight: normal;
