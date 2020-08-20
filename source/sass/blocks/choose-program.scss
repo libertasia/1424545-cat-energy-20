@@ -121,11 +121,11 @@
 
 .choose-program__radio-button {
   position: absolute;
-  /*  z-index: -1;
-  opacity: 0;*/
-  --webkit-appearance: none;
+  z-index: -1;
+  opacity: 0;
+  /*  --webkit-appearance: none;
   --moz-appearance: none;
-  appearance: none;
+  appearance: none;*/
 }
 
 .choose-program__check-box {
