@@ -41,8 +41,9 @@
   text-transform: uppercase;
   color: $basic-white;
   background-color: $basic-bright;
-  width: 266px;
-  min-height: 26px;
+  border: none;
+  width: 280px;
+  min-height: 40px;
   margin: 0;
   margin-bottom: 21px;
   padding: 7px;
@@ -50,18 +51,29 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 
   @media (min-width: $medium) {
     font-size: 20px;
-    width: 256px;
+    width: 282px;
+    min-height: 52px;
     margin: 0;
     margin-right: 61px;
     padding: 13px;
   }
 
   @media (min-width: $large) {
-    width: 542px;
+    width: 568px;
     margin-right: 81px;
+  }
+
+  &:hover {
+    background-color: $bright;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
   }
 }
 

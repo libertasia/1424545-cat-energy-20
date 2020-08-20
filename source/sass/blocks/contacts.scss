@@ -169,6 +169,7 @@
 
   &:active {
     border: 2px solid $special-dark-grey;
+    outline: none;
   }
 
   &:invalid {

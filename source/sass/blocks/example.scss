@@ -5,7 +5,7 @@
   padding-bottom: 31px;
 
   @media (min-width: $medium) {
-      /*  background: -webkit-linear-gradient(bottom, $basic-white 57.26%, $example-background-grey 42.74%);
+    /*  background: -webkit-linear-gradient(bottom, $basic-white 57.26%, $example-background-grey 42.74%);
     background: -moz-linear-gradient(bottom, $basic-white 57.26%, $example-background-grey 42.74%);*/
     background: linear-gradient(to bottom, $basic-white 57.26%, $example-background-grey 42.74%);
     min-height: 739px;
@@ -51,7 +51,6 @@
     margin-bottom: 146px;
     padding: 0;
     padding-top: 58px;
-
   }
 }
 
