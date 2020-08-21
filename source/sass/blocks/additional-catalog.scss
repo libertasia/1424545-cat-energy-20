@@ -45,6 +45,22 @@
     left: 100%;
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    border-bottom: 2px solid $basic-bright;
+    width: 100vw;
+    margin-top: 0;
+    margin-right: 37px;
+    right: 100%;
+  }
+
+  @media (max-width: $small) {
+    &::after {
+      display: none;
+  }
+
   @media (min-width: $medium) {
     &::before {
       margin-left: 36px;

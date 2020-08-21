@@ -1,9 +1,5 @@
 .promo {
-  background: linear-gradient(to bottom, $basic-bright 60.76%, $basic-white 39.24%);
-  position: relative;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 60.76%;
+  background: linear-gradient(to bottom, $background-mobile-bright 63.54%, $basic-white 36.46%);
 
   @media (min-width: $medium) {
     background: none;
@@ -20,9 +16,14 @@
   flex-direction: column;
   text-align: center;
   color: $basic-white;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
 
   @media (min-width: $medium) {
     color: $basic-black;
+    background: none;
     margin-bottom: 0;
     padding-top: 62px;
     min-height: 810px;
