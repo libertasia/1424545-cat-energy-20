@@ -65,14 +65,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  position: relative;
 
   &::before {
     content: "";
     position: absolute;
     border-bottom: 1px solid $special-grey-2;
     width: 100vw;
-    margin-top: 0;
-    left: 0;
+    top: 0;
+    left: calc(50% - 50vw);
   }
 
   @media (min-width: $medium) {

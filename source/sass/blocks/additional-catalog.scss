@@ -23,10 +23,12 @@
     font-size: 36px;
     line-height: 1;
     margin-bottom: 80px;
+    margin-left: 37px;
   }
 
   @media (min-width: $large) {
     margin-bottom: 81px;
+    margin-left: 0;
   }
 }
 
@@ -37,57 +39,42 @@
   &::before {
     content: "";
     position: absolute;
+    display: block;
     top: 60%;
     border-bottom: 2px solid $basic-bright;
     width: 100vw;
-    margin-top: 0;
-    margin-left: 22px;
-    left: 100%;
+    left: calc(100% + 22px);
   }
 
   &::after {
     content: "";
     position: absolute;
+    display: block;
     top: 60%;
     border-bottom: 2px solid $basic-bright;
     width: 100vw;
-    margin-top: 0;
-    margin-right: 37px;
-    right: 100%;
+    right: calc(100% + 22px);
   }
 
-  @media (max-width: $small) {
+  @media (max-width: $small-only) {
     &::after {
       display: none;
+    }
   }
 
   @media (min-width: $medium) {
     &::before {
-      margin-left: 36px;
+      left: calc(100% + 36px);
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      top: 60%;
-      border-bottom: 2px solid $basic-bright;
-      width: 100vw;
-      margin-top: 0;
-      margin-right: 37px;
-      right: 100%;
+      right: calc(100% + 37px);
     }
   }
 
   @media (min-width: $large) {
     &::after {
-      content: "";
-      position: absolute;
-      top: 60%;
-      border-bottom: 2px solid $basic-bright;
-      width: 100vw;
-      margin-top: 0;
-      margin-right: 40px;
-      right: 100%;
+      right: calc(100% + 40px);
     }
   }
 }

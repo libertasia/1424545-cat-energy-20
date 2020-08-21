@@ -29,8 +29,8 @@
     position: absolute;
     border-bottom: 1px solid $special-grey-2;
     width: 100vw;
-    margin-bottom: 184px;
-    left: 0;
+    bottom: 209px;
+    right: calc(50% - 50vw);
   }
 
   @media (min-width: $medium) {

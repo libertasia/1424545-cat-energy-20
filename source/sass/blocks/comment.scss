@@ -45,37 +45,43 @@
     content: "";
     position: absolute;
     top: 60%;
+    left: calc(100% + 22px);
     border-bottom: 2px solid $basic-bright;
     width: 100vw;
-    margin-top: 0;
-    margin-left: 22px;
-    left: 100%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: calc(100% + 22px);
+    border-bottom: 2px solid $basic-bright;
+    width: 100vw;
+  }
+
+  @media (max-width: $small-only) {
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $medium) {
     &::before {
-      margin-left: 38px;
+      left: calc(100% + 38px);
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      top: 60%;
-      border-bottom: 2px solid $basic-bright;
-      width: 100vw;
-      margin-top: 0;
-      margin-right: 39px;
-      right: 100%;
+      right: calc(100% + 39px);
     }
   }
 
   @media (min-width: $large) {
     &::before {
-      margin-left: 40px;
+      left: calc(100% + 40px);
     }
 
     &::after {
-      margin-right: 40px;
+      right: calc(100% + 40px);
     }
   }
 }

@@ -65,7 +65,7 @@
     position: absolute;
     border-bottom: 1px solid $line-color;
     width: 100vw;
-    margin-top: -20px;
+    top: -20px;
     left: calc(50% - 50vw);
   }
 
@@ -85,8 +85,7 @@
     position: absolute;
     border-bottom: 1px solid $line-color;
     width: 100vw;
-    bottom: 0;
-    margin-bottom: -22px;
+    bottom: -22px;
     left: calc(50% - 50vw);
   }
 
@@ -128,7 +127,6 @@
 
 .choose-program__check-box {
   position: absolute;
-  //  margin-right: -15px;
   top: 0;
   left: 0;
   height: 29px;
