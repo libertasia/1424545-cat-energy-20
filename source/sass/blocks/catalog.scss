@@ -65,14 +65,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  position: relative;
 
   &::before {
     content: "";
     position: absolute;
     border-bottom: 1px solid $special-grey-2;
     width: 100vw;
-    margin-top: 0;
-    left: 0;
+    top: 0;
+    left: calc(50% - 50vw);
   }
 
   @media (min-width: $medium) {
@@ -80,7 +81,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 324px;
     min-height: 430px;
     padding: 0;

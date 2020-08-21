@@ -86,7 +86,7 @@
 }
 
 .collaboration__address-break {
-  @media (max-width: $small) {
+  @media (max-width: $small-only) {
     display: none;
   }
 }

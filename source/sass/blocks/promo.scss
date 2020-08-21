@@ -1,9 +1,5 @@
 .promo {
-  background: linear-gradient(to bottom, $basic-bright 60.76%, $basic-white 39.24%);
-  position: relative;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 60.76%;
+  background: linear-gradient(to bottom, $background-bright 63.54%, $basic-white 36.46%);
 
   @media (min-width: $medium) {
     background: none;
@@ -20,9 +16,19 @@
   flex-direction: column;
   text-align: center;
   color: $basic-white;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px 305px;
+  }
 
   @media (min-width: $medium) {
     color: $basic-black;
+    background: none;
     margin-bottom: 0;
     padding-top: 62px;
     min-height: 810px;
@@ -78,6 +84,23 @@
   }
 }
 
+.promo__can-image {
+  position: absolute;
+  top: 167px;
+  left: 20px;
+
+  @media (min-width: $medium) {
+    top: 263px;
+    left: 29px;
+  }
+
+  @media (min-width: $large) {
+    top: 32px;
+    left: 558px;
+    z-index: 2;
+  }
+}
+
 .promo__button {
   font-weight: normal;
   font-size: 14px;
@@ -108,6 +131,6 @@
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: transparentize($basic-white, 0.3);
   }
 }

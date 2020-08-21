@@ -5,7 +5,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -49px;
+  top: -40px;
   right: 0;
   z-index: 2;
   display: block;
@@ -56,7 +56,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -49px;
+  top: -40px;
   right: 0;
 
   &::before,
@@ -65,7 +65,7 @@
     position: absolute;
     top: 5px;
     left: 5px;
-    width: 18px;
+    width: 25px;
     height: 2px;
     background-color: $basic-black;
   }

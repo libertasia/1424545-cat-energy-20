@@ -10,7 +10,11 @@
     <header class="header">
       <div class="header__wrapper container">
         <a class="header__logo" href="index.html">
-          <img class="header__logo-image" src="https://via.placeholder.com/191x38" alt="Логотип Cat energy, перейти на главную страницу сайта">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип Cat energy, перейти на главную страницу сайта">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
@@ -71,21 +75,21 @@
                 <ul class="choose-program__list">
                   <li class="choose-program__item">
                     <label class="choose-program__label" for="weight-loss">
-                      <input class="choose-program__radio-button" id="weight-loss" type="radio" name="program" value="weight-loss" checked>
+                      <input class="choose-program__radio-button visually-hidden" id="weight-loss" type="radio" name="program" value="weight-loss" checked>
                       <span class="choose-program__check-box"></span>
                       Похудение
                     </label>
                   </li>
                   <li class="choose-program__item">
                     <label class="choose-program__label" for="weight-gain">
-                      <input class="choose-program__radio-button" id="weight-gain" type="radio" name="program" value="weight-gain">
+                      <input class="choose-program__radio-button visually-hidden" id="weight-gain" type="radio" name="program" value="weight-gain">
                       <span class="choose-program__check-box"></span>
                       Набор массы
                   </label>
                   </li>
                   <li class="choose-program__item">
                       <label class="choose-program__label" for="other">
-                      <input class="choose-program__radio-button" id="other" type="radio" name="program" value="other">
+                      <input class="choose-program__radio-button visually-hidden" id="other" type="radio" name="program" value="other">
                       <span class="choose-program__check-box"></span>
                       Не знаю (Нужен ваш совет)
                   </label>
@@ -132,28 +136,28 @@
               <ul class="extra__list">
                 <li class="extra__item">
                   <label class="extra__label" for="sweetener">
-                    <input class="extra__checkbox" id="sweetener" type="checkbox" name="sweetener" checked>
+                    <input class="extra__checkbox visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
                     <span class="extra__check-box"></span>
                     Сахарозаменитель
                   </label>
                 </li>
                 <li class="extra__item">
                   <label class="extra__label" for="water">
-                    <input class="extra__checkbox" id="water" type="checkbox" name="water">
+                    <input class="extra__checkbox visually-hidden" id="water" type="checkbox" name="water">
                     <span class="extra__check-box"></span>
                     Питьевая вода
                   </label>
                 </li>
                 <li class="extra__item">
                   <label class="extra__label" for="milk">
-                    <input class="extra__checkbox" id="milk" type="checkbox" name="milk">
+                    <input class="extra__checkbox visually-hidden" id="milk" type="checkbox" name="milk">
                     <span class="extra__check-box"></span>
                     Молоко
                   </label>
                 </li>
                 <li class="extra__item">
                   <label class="extra__label" for="vitamins">
-                    <input class="extra__checkbox" id="vitamins" type="checkbox" name="vitamins">
+                    <input class="extra__checkbox visually-hidden" id="vitamins" type="checkbox" name="vitamins">
                     <span class="extra__check-box"></span>
                     Витамины
                   </label>
@@ -188,7 +192,13 @@
         </section>
 
         <div class="map">
-          <img class="map__image image" src="https://via.placeholder.com/320x362" alt="Карта нахождения интернет-магазина в г. Санкт-Петербург">
+          <div class="map__image-wrapper">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img class="map__image image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта нахождения интернет-магазина в г. Санкт-Петербург">
+            </picture>
+          </div>
         </div>
       </div>
     </main>
@@ -197,7 +207,7 @@
       <div class="footer__wrapper container">
         <div class="footer__logo">
           <a class="footer-logo">
-            <img class="image" src="https://via.placeholder.com/128x24" alt="Название магазина Cat energy">
+            <img class="image" src="img/logo-footer.svg" width="128" height="24" alt="Название магазина Cat energy">
           </a>
         </div>
         <section class="footer__social social">
@@ -206,26 +216,27 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте</span>
-                <img class="image" src="https://via.placeholder.com/23x16" alt="Мы в Вконтакте">
+                <img class="image" src="img/icon-vk.svg" width="22" height="12" alt="Мы в Вконтакте">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
                 <span class="visually-hidden">Инстаграм</span>
-                <img class="image" src="https://via.placeholder.com/16x16" alt="Мы в Инстаграме">
+                <img class="image" src="img/icon-insta.svg" width="16" height="16" alt="Мы в Инстаграме">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фейсбук</span>
-                <img class="image" src="https://via.placeholder.com/22x22" alt="Мы в Фейсбуке">
+                <img class="image" src="img/icon-fb.svg" width="10" height="18" alt="Мы в Фейсбуке">
               </a>
             </li>
           </ul>
         </section>
         <div class="footer__copyright copyright">
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="image" src="https://via.placeholder.com/280x34" alt="Логотип HTML Academy, перейти на сайт">
+            <p>HTML Academy</p>
+            <img class="image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy, перейти на сайт">
           </a>
         </div>
       </div>
