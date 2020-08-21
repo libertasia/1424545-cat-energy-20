@@ -14,12 +14,12 @@
     line-height: 1.5;
     border-bottom-width: 1px;
     border-bottom-style: dotted;
-    border-bottom-color: rgba(0, 0, 0, 0.4);
+    border-bottom-color: transparentize($basic-black, 0.4);
 
     &:hover {
       border-bottom-width: 1px;
       border-bottom-style: solid;
-      border-bottom-color: rgba(0, 0, 0, 0.4);
+      border-bottom-color: transparentize($basic-black, 0.4);
     }
   }
 }
@@ -60,16 +60,16 @@
     border-radius: 50%;
     background-color: $basic-white;
     border: 1px solid $special-grey;
-    box-shadow: (0 1px 3px rgba(0, 0, 0, 0.16));
+    box-shadow: (0 1px 3px transparentize($basic-black, 0.16));
 
     &:hover {
-      box-shadow: (0 2px 4px rgba(0, 0, 0, 0.19));
+      box-shadow: (0 2px 4px transparentize($basic-black, 0.19));
       outline: none;
     }
 
     &:active {
       border: 1px solid $basic-bright;
-      box-shadow: (0 3px 5px rgba(0, 0, 0, 0.2));
+      box-shadow: (0 3px 5px transparentize($basic-black, 0.2));
     }
 
     &::before {

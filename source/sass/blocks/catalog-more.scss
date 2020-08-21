@@ -165,6 +165,6 @@
   }
 
   &:active {
-    color: rgba(68, 68, 68, 0.3);
+    color: transparentize($special-dark-grey, 0.3);
   }
 }

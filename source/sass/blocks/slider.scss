@@ -16,6 +16,10 @@
 
 .slider__images {
   position: relative;
+
+  @media (min-width: $large) {
+    margin-right: -40px;
+  }
 }
 
 .slider__image {

@@ -39,6 +39,14 @@
     height: 59px;
     margin-right: 536px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .header__logo-image {
@@ -58,7 +66,7 @@
 
 .header--index {
   @media (min-width: $large) {
-    background: linear-gradient(to right, $basic-white 50%, $basic-bright 50%);
+    background: linear-gradient(to right, $basic-white 50%, $background-bright 50%);
     position: relative;
     z-index: 1;
 
@@ -69,10 +77,16 @@
       top: 0;
       width: 50vw;
       height: 696px;
-      background: $basic-bright;
+      background: $background-bright;
       background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
       z-index: -1;
       box-sizing: border-box;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px 696px;
+      }
     }
   }
 }
