@@ -4,6 +4,7 @@
 
   @media (min-width: $medium) {
     margin-bottom: 47px;
+    background-color: transparent;
   }
 
   @media (min-width: $large) {
@@ -37,6 +38,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 137px;
     row-gap: 37px;
+    counter-reset: item-counter;
   }
 
   @media (min-width: $large) {
@@ -56,7 +58,22 @@
     margin: 0;
     padding: 0;
     padding-top: 151px;
+    justify-self: start;
+    // padding-right: 28px;
     min-height: 129px;
+    position: relative;
+
+    &::after {
+      content: counter(item-counter);
+      counter-increment: item-counter;
+      font-size: 280px;
+      line-height: 1;
+      color: $basic-grey;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
   }
 }
 
@@ -84,10 +101,6 @@
   }
 
   @media (min-width: $medium) {
-    background-image: url("../img/one.png");
-    background-repeat: no-repeat;
-    background-position: 125px 40px;
-
     &::before {
       top: 40px;
       width: 80px;
@@ -120,10 +133,6 @@
   }
 
   @media (min-width: $medium) {
-    background-image: url("../img/two.png");
-    background-repeat: no-repeat;
-    background-position: 125px 40px;
-
     &::before {
       top: 40px;
       width: 80px;
@@ -155,10 +164,6 @@
   }
 
   @media (min-width: $medium) {
-    background-image: url("../img/three.png");
-    background-repeat: no-repeat;
-    background-position: 125px 40px;
-
     &::before {
       top: 40px;
       width: 80px;
@@ -190,19 +195,11 @@
   }
 
   @media (min-width: $medium) {
-    background-image: url("../img/four.png");
-    background-repeat: no-repeat;
-    background-position: 125px 40px;
-
     &::before {
       top: 40px;
       width: 80px;
       height: 80px;
     }
-  }
-
-  @media (min-width: $large) {
-    background-position: 100px 40px;
   }
 }
 
@@ -217,5 +214,9 @@
   @media (min-width: $medium) {
     font-size: 16px;
     line-height: 1.5;
+
+    &:last-child {
+      width: 245px;
+    }
   }
 }

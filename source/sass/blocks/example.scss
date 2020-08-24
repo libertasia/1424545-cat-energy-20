@@ -62,7 +62,7 @@
   color: $special-dark-grey;
   margin: 0;
   margin-bottom: 25px;
-  min-width: 279px;
+  width: 279px;
   min-height: 108px;
   display: flex;
   flex-wrap: wrap;
@@ -70,13 +70,9 @@
   @media (min-width: $medium) {
     font-size: 16px;
     line-height: 1.5;
-    width: 708px;
+    width: 700px;
     min-height: 72px;
     margin-bottom: 54px;
-
-    br {
-      display: none;
-    }
   }
 
   @media (min-width: $large) {
@@ -197,5 +193,6 @@
 }
 
 .example__food-price {
+  text-transform: uppercase;
   margin: 0;
 }
