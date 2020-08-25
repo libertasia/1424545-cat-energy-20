@@ -116,6 +116,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  position: relative;
 
   @media (min-width: $medium) {
     min-height: 52px;
@@ -174,13 +175,13 @@
     border: 1px solid $special-grey;
   }
 
-  &:active {
-    border: 2px solid $special-dark-grey;
-    outline: none;
-  }
-
   &:invalid {
     border: 2px solid $status-error;
+  }
+
+  &:focus {
+    border: 2px solid $special-dark-grey;
+    outline: none;
   }
 }
 
@@ -205,7 +206,6 @@
   width: 204px;
   height: 45px;
   padding: 13px 33px 15px 16px;
-  position: relative;
 
   @media (min-width: $medium) {
     width: 535px;
@@ -229,5 +229,53 @@
   @media (min-width: $medium) {
     font-size: 20px;
     line-height: 1.5;
+  }
+}
+
+.contacts__icon-mail {
+  fill: $special-dark-grey-2;
+  position: absolute;
+  top: 16px;
+  right: 15px;
+
+  @media (min-width: $medium) {
+    right: 50px;
+  }
+
+  @media (min-width: $large) {
+    top: 19px;
+    right: 23px;
+  }
+
+  .contacts__input:invalid + & {
+    fill: $status-error;
+  }
+
+  .contacts__input:focus + & {
+    fill: $basic-bright;
+  }
+}
+
+.contacts__icon-phone {
+  fill: $special-dark-grey-2;
+  position: absolute;
+  top: 13px;
+  right: 12px;
+
+  @media (min-width: $medium) {
+    right: 47px;
+  }
+
+  @media (min-width: $large) {
+    top: 15px;
+    right: 21px;
+  }
+
+  .contacts__input:invalid + & {
+    fill: $status-error;
+  }
+
+  .contacts__input:focus + & {
+    fill: $basic-bright;
   }
 }
