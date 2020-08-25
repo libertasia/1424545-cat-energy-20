@@ -11,19 +11,6 @@
   align-items: center;
   position: relative;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 26px;
-    left: 125px;
-    background-image: url("../img/icon-plus-mobile.svg");
-    background-repeat: no-repeat;
-    fill: #d3d3d3;//разобраться с цветом, почему не работает
-  }
-
   &::after {
     content: "";
     position: absolute;
@@ -44,18 +31,6 @@
     &::after {
       display: none;
     }
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      top: 52px;
-      left: 132px;
-      background-image: url("../img/icon-plus.svg"); //разобраться с цветом, почему не работает
-      background-repeat: no-repeat;
-    }
   }
 
   @media (min-width: $large) {
@@ -63,12 +38,31 @@
     min-height: 387px;
     margin-top: 143px;
     padding-bottom: 40px;
+  }
+}
 
-    &::before {
-      content: "";
-      top: 51px;
-      left: 92px;
-    }
+.catalog-more__icon-plus {
+  position: absolute;
+  top: 26px;
+
+  @media (min-width: $medium) {
+    width: 60px;
+    height: 60px;
+    top: 52px;
+  }
+}
+
+.catalog-more__icon-plus-mobile {
+  @media (min-width: $medium) {
+    display: none;
+  }
+}
+
+.catalog-more__icon-plus-desktop {
+  display: none;
+
+  @media (min-width: $medium) {
+    display: block;
   }
 }
 
