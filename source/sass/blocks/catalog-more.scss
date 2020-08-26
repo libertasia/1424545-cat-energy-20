@@ -52,20 +52,6 @@
   }
 }
 
-.catalog-more__icon-plus-mobile {
-  @media (min-width: $medium) {
-    display: none;
-  }
-}
-
-.catalog-more__icon-plus-desktop {
-  display: none;
-
-  @media (min-width: $medium) {
-    display: block;
-  }
-}
-
 .catalog-more__text-show {
   font-weight: normal;
   font-size: 16px;
