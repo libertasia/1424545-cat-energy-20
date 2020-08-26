@@ -58,7 +58,12 @@ const images = () => {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel:3}),
       imagemin.mozjpeg({quality: 75, progressive: true}),
-      imagemin.svgo()
+      imagemin.svgo({
+        plugins: [
+            {cleanupIDs: false},
+            {removeUselessDefs: false}
+        ]
+      })
     ]))
     .pipe(gulp.dest("source/img"))
 }
