@@ -10,6 +10,8 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
 
 // Styles
 
@@ -21,6 +23,8 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -53,6 +57,8 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series("copy")).on("change", sync.reload);
 }
 
+// Minify images
+
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
@@ -65,27 +71,46 @@ const images = () => {
         ]
       })
     ]))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.images = images;
 
-//WebP
+// Make WebP
 
 const webP = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.webP = webP;
 
-//Copy
+// Minify Html
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build/"));
+}
+
+exports.html = html;
+
+// Minify JavaScript
+
+const compressjs = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"))
+}
+
+exports.compressjs = compressjs;
+
+// Copy
 
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
     "source/js/**",
     "source/*.ico",
     "source/*.html"
@@ -97,7 +122,7 @@ const copy = () => {
 
 exports.copy = copy;
 
-//Clean(Del)
+// Clean(Del)
 
 const clean = () => {
   return del("build");
@@ -112,7 +137,9 @@ const build = gulp.series(
   copy,
   styles,
   images,
-  webP
+  webP,
+  compressjs,
+  html
 );
 
 exports.build = build;
