@@ -8,8 +8,10 @@
   color: $basic-black;
   background-color: inherit;
   padding: 0;
+  padding-left: 7px;
 
   @media (min-width: $medium) {
+    padding-left: 0;
     font-size: 20px;
     line-height: 1.5;
     border-bottom-width: 1px;
@@ -28,7 +30,8 @@
   position: relative;
   width: 84px;
   height: 14px;
-  top: 6px;
+  top: 2px;
+  left: 4px;
   border: 1px solid $special-grey;
   border-radius: 6px;
   background-color: $basic-white;

@@ -3,7 +3,7 @@
 }
 
 .footer__wrapper {
-  padding-top: 39px;
+  padding-top: 37px;
   padding-bottom: 22px;
   min-height: 175px;
   display: flex;
@@ -16,7 +16,7 @@
     min-height: 35px;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
   }
 
   @media (min-width: $large) {

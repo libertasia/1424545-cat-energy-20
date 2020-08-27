@@ -37,7 +37,7 @@
 .collaboration__title {
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.125;
+  line-height: 1.25;
   text-transform: uppercase;
   color: $special-dark-title;
   margin: 0;
@@ -48,7 +48,7 @@
 
   @media (min-width: $medium) {
     font-size: 20px;
-    line-height: 1.05;
+    line-height: 1.3;
     min-width: 171px;
     margin-right: 295px;
   }
@@ -72,7 +72,7 @@
 
   @media (min-width: $medium) {
     font-size: 16px;
-    line-height: 1.25;
+    line-height: 1.5;
     text-align: right;
     min-width: 159px;
     justify-content: flex-end;

@@ -16,16 +16,22 @@
 
 .slider__images {
   position: relative;
+  left: -20px;
+  top: 34px;
   min-height: 240px;
 
   @media (min-width: $medium) {
     flex-shrink: 0;
     min-height: 517px;
+    left: 18px;
+    top: 26px;
   }
 
   @media (min-width: $large) {
     margin-right: -40px;
     margin-bottom: 19px;
+    left: 0;
+    top: 0;
   }
 }
 
@@ -101,8 +107,10 @@
   justify-content: space-between;
   margin: 0 auto;
   width: 205px;
+  margin-top: 65px;
 
   @media (min-width: $medium) {
     width: 570px;
+    margin-top: 42px;
   }
 }

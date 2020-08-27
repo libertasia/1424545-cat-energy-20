@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $large) {
-    margin-bottom: 71px;
+    margin-bottom: 65px;
   }
 }
 
@@ -47,6 +47,8 @@
 }
 
 .programs__item:nth-child(2n) {
+  margin-bottom: 0;
+
   @media (min-width: $large) {
     margin-right: 0;
   }
