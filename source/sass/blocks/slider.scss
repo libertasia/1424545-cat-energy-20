@@ -12,6 +12,7 @@
     min-height: 325px;
     max-width: 681px;
     justify-content: flex-start;
+    padding-bottom: 68px;
   }
 }
 
@@ -70,7 +71,7 @@
     }
 
     @media (min-width: $large) {
-      background: linear-gradient(to top, $basic-grey 323px, $basic-white 179px);
+      background: linear-gradient(to top, $example-background-grey 323px, $basic-white 179px);
       top: -1px;
     }
   }

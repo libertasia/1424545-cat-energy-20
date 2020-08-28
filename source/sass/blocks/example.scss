@@ -25,7 +25,8 @@
   flex-direction: column;
 
   @media (min-width: $large) {
-    padding-bottom: 68px;
+    //padding-bottom: 68px;
+    padding-bottom: 0;
     min-height: 324px;
     flex-direction: row;
   }
@@ -97,6 +98,7 @@
     margin: 0;
     margin-right: 134px;
     flex-direction: column;
+    padding-bottom: 68px;
   }
 }
 
