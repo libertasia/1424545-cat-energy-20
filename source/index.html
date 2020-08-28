@@ -163,16 +163,6 @@
 
           <div class="slider">
             <div class="slider__images">
-              <div class="slider__image slider__image--after">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-                  <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                  <img class="slider__image-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Стало">
-                </picture>
-              </div>
               <div class="slider__image slider__image--before">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
@@ -181,6 +171,16 @@
                   <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                   <img class="slider__image-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Было">
+                </picture>
+              </div>
+              <div class="slider__image slider__image--after">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img class="slider__image-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Стало">
                 </picture>
               </div>
             </div>
@@ -248,7 +248,7 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
                 <span class="visually-hidden">Вконтакте</span>
-                <svg class="social__icon-vkontakte" width="22" height="12" role="img">
+                <svg class="social__icon-vkontakte" width="22" height="12" >
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
@@ -256,7 +256,7 @@
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
                 <span class="visually-hidden">Инстаграм</span>
-                <svg class="social__icon-instagram" width="16" height="16" role="img">
+                <svg class="social__icon-instagram" width="16" height="16">
                   <use xlink:href="img/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -264,7 +264,7 @@
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
                 <span class="visually-hidden">Фейсбук</span>
-                <svg class="social__icon-facebook" width="10" height="19" role="img">
+                <svg class="social__icon-facebook" width="10" height="19">
                   <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -274,7 +274,7 @@
         <div class="footer__copyright copyright">
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <p>HTML Academy</p>
-            <svg class="copyright__logo-academy" width="27" height="34" role="img">
+            <svg class="copyright__logo-academy" width="27" height="34">
               <use xlink:href="img/sprite.svg#logo-academy"></use>
             </svg>
           </a>

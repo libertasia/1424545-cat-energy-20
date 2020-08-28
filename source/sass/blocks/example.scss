@@ -13,10 +13,11 @@
   }
 
   @media (min-width: $large) {
-    background: linear-gradient(to top, $basic-grey 70.43%, $basic-white 29.57%);
-    min-height: 598px;
+    background: linear-gradient(to right, $basic-grey calc(50% + 610px), $example-background-grey calc(50% + 610px));
+    min-height: 393px;
     padding: 0;
     border: none;
+    margin-top: 205px;
   }
 }
 
@@ -99,6 +100,7 @@
     margin-right: 134px;
     flex-direction: column;
     padding-bottom: 68px;
+    margin-top: -195px;
   }
 }
 

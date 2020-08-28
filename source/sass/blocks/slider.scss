@@ -13,6 +13,7 @@
     max-width: 681px;
     justify-content: flex-start;
     padding-bottom: 68px;
+    margin-top: -195px;
   }
 }
 
@@ -51,13 +52,13 @@
   &--before {
     @media (min-width: $medium) {
       display: block;
-      width: 47.5%;
-      background: linear-gradient(to top, $example-background-grey 344px, $basic-white 173px);
+      width: 100%;
+      background: linear-gradient(to top, $example-background-grey 346px, $basic-white 173px);
     }
 
     @media (min-width: $large) {
-      background: linear-gradient(to top, $basic-grey 324px, $basic-white 178px);
-      width: 53%;
+      background: linear-gradient(to top, $basic-grey 322px, $basic-white 178px);
+      width: 100%;
     }
   }
 
@@ -68,11 +69,16 @@
     @media (min-width: $medium) {
       display: block;
       background: linear-gradient(to top, $example-background-grey 344px, $basic-white 173px);
+      width: 50%;
+      right: 20px;
     }
 
     @media (min-width: $large) {
-      background: linear-gradient(to top, $example-background-grey 323px, $basic-white 179px);
+      background: linear-gradient(to top, $example-background-grey 321px, $basic-white 179px);
       top: -1px;
+      right: 0;
+      width: 47%;
+      height: 655px;
     }
   }
 }
@@ -86,7 +92,16 @@
 .slider__image-after {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, $basic-white 196px, $example-background-grey 195px);
+
+  @media (min-width: $medium) {
+    background: linear-gradient(to bottom, $basic-white 171px, $example-background-grey 170px);
+  }
+
+  @media (min-width: $large) {
+    background: linear-gradient(to bottom, $basic-white 196px, $example-background-grey 195px);
+  }
 }
 
 .slider__control {
@@ -105,5 +120,6 @@
   @media (min-width: $large) {
     margin-top: 38px;
     padding-left: 79px;
+    position: relative;
   }
 }
