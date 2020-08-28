@@ -30,7 +30,7 @@
     left: 110px;
     width: 405px;
     min-height: 88px;
-    padding: 62px 89px 51px 76px;
+    padding: 66px 89px 51px 76px;
   }
 }
 
@@ -66,27 +66,23 @@
   line-height: 1.43;
   color: $special-dark-grey;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
   min-width: 140px;
 
   @media (min-width: $medium) {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.25;
     text-align: right;
     min-width: 159px;
-    justify-content: flex-end;
   }
 
   @media (min-width: $large) {
     text-align: left;
     min-width: 155px;
-    justify-content: flex-start;
   }
 }
 
 .collaboration__address-break {
-  @media (max-width: $small-only) {
+  @media (max-width: $small) {
     display: none;
   }
 }

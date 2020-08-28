@@ -1,19 +1,19 @@
 .extra {
   border: none;
   margin: 0 auto;
-  margin-bottom: 34px;
+  margin-bottom: 27px;
   padding: 0;
   min-height: 217px;
 
 
   @media (min-width: $medium) {
     min-height: 205px;
-    margin-bottom: 54px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: $large) {
     min-height: 133px;
-    margin-bottom: 61px;
+    margin-bottom: 30px;
   }
 }
 
@@ -22,7 +22,7 @@
   font-size: 24px;
   line-height: 1.1;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 41px;
   padding: 0;
 
   @media (min-width: $medium) {
@@ -108,13 +108,27 @@
   padding: 0;
 
   @media (min-width: $medium) {
-    width: 50%;
+    width: 220px;
     min-height: 40px;
     margin-bottom: 32px;
+    margin-right: 123px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   @media (min-width: $large) {
-    width: 25%;
+    width: 220px;
+    margin-right: 105px;
+
+    &:nth-child(2n) {
+      margin-right: 105px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -126,6 +140,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 1.12;
+  text-transform: uppercase;
   position: relative;
   padding-left: 46px;
 
@@ -133,6 +148,7 @@
     font-size: 20px;
     line-height: 1.5;
     padding-left: 59px;
+    padding-top: 4px;
   }
 
   &:active {
@@ -146,6 +162,10 @@
 
 .extra__checkbox + .extra__label {
   position: relative;
+
+  @media (min-width: $medium) {
+    top: 4px;
+  }
 
   &::before {
     content: "";

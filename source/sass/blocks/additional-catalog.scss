@@ -16,7 +16,7 @@
   font-weight: normal;
   font-size: 24px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   background-color: $basic-white;
 
   @media (min-width: $medium) {
@@ -108,7 +108,7 @@
   justify-content: flex-end;
   flex-wrap: wrap;
   width: 280px;
-  min-height: 130px;
+  min-height: 128px;
   margin: 0;
   border-top: 1px solid $special-grey;
 
@@ -121,7 +121,7 @@
     justify-content: space-between;
     align-items: baseline;
     width: 708px;
-    min-height: 140px;
+    min-height: 139px;
     border-top: 1px solid $special-grey;
     border-right: 1px solid $special-grey;
     border-left: 1px solid $special-grey;
@@ -130,7 +130,7 @@
   @media (min-width: $large) {
     align-items: center;
     width: 895px;
-    min-height: 72px;
+    min-height: 70px;
     border-right: none;
     border-left: none;
   }

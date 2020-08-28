@@ -2,7 +2,7 @@
   border: none;
   box-sizing: border-box;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 19px;
   padding: 0;
 
   @media (min-width: $medium) {
@@ -22,7 +22,7 @@
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 22px;
   display: flex;
   flex-wrap: wrap;
@@ -63,7 +63,7 @@
     position: absolute;
     border-bottom: 1px solid $line-color;
     width: 100vw;
-    top: -20px;
+    top: -27px;
     left: calc(50% - 50vw);
   }
 
@@ -83,7 +83,7 @@
     position: absolute;
     border-bottom: 1px solid $line-color;
     width: 100vw;
-    bottom: -22px;
+    bottom: -15px;
     left: calc(50% - 50vw);
   }
 
@@ -126,7 +126,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -4px;
     left: 0;
     height: 29px;
     width: 29px;
@@ -145,7 +145,7 @@
     content: "";
     position: absolute;
     display: none;
-    top: 8px;
+    top: 4px;
     left: 8px;
     height: 14px;
     width: 14px;
@@ -154,7 +154,7 @@
     border-radius: 50%;
 
     @media (min-width: $medium) {
-      top: 11px;
+      top: 8px;
       left: 11px;
       height: 18px;
       width: 18px;

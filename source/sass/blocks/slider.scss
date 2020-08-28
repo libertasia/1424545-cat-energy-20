@@ -11,6 +11,7 @@
   @media (min-width: $large) {
     min-height: 325px;
     max-width: 681px;
+    justify-content: flex-start;
   }
 }
 
@@ -29,7 +30,6 @@
 
   @media (min-width: $large) {
     margin-right: -40px;
-    margin-bottom: 19px;
     left: 0;
     top: 0;
   }
@@ -50,52 +50,39 @@
   &--before {
     @media (min-width: $medium) {
       display: block;
-      width: 50%;
+      width: 47.5%;
       background: linear-gradient(to top, $example-background-grey 344px, $basic-white 173px);
-      //width: 50%;
-      // left: 0;
     }
 
     @media (min-width: $large) {
-      background: linear-gradient(to top, $basic-grey 339px, $basic-white 178px);
-      width: 60%;
+      background: linear-gradient(to top, $basic-grey 324px, $basic-white 178px);
+      width: 53%;
     }
   }
 
   &--after {
     display: none;
-    //position: absolute;
     top: 0;
 
     @media (min-width: $medium) {
       display: block;
       background: linear-gradient(to top, $example-background-grey 344px, $basic-white 173px);
-      // right: 0;
     }
 
     @media (min-width: $large) {
-      background: linear-gradient(to top, $basic-grey 338px, $basic-white 179px);
-      //width: 47.1%;
+      background: linear-gradient(to top, $basic-grey 323px, $basic-white 179px);
       top: -1px;
     }
   }
 }
 
 .slider__image-before {
-  // object-fit: none;
-  // object-position: left center;
-  // height: 100%;
-  // max-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .slider__image-after {
-  // object-fit: none;
-  // object-position: right center;
-  // height: 100%;
-  // max-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -112,5 +99,10 @@
   @media (min-width: $medium) {
     width: 570px;
     margin-top: 42px;
+  }
+
+  @media (min-width: $large) {
+    margin-top: 38px;
+    padding-left: 79px;
   }
 }

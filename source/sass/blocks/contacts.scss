@@ -1,13 +1,13 @@
 .contacts {
   border: none;
-  margin-bottom: 27px;
+  margin-bottom: 12px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 
   @media (min-width: $medium) {
-    margin-bottom: 65px;
+    margin-bottom: 43px;
   }
 
   @media (min-width: $large) {
@@ -30,7 +30,7 @@
     line-height: 1;
     width: 512px;
     margin: 0;
-    margin-bottom: 76px;
+    margin-bottom: 73px;
     padding: 0;
     padding-left: 39px;
     padding-right: 39px;
@@ -130,7 +130,7 @@
   @media (min-width: $large) {
     padding: 0;
     margin: 0;
-    margin-right: 78px;
+    margin-right: 74px;
   }
 }
 
@@ -154,10 +154,14 @@
     line-height: 1.5;
     margin-right: 14px;
   }
+
+  @media (min-width: $large) {
+    margin-right: 20px;
+  }
 }
 
 .contacts__input {
-  font-family: inherit;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.12;
@@ -198,7 +202,7 @@
 
   @media (min-width: $large) {
     width: 486px;
-    padding: 10px 38px 10px 19px;
+    padding: 9px 38px 10px 18px;
   }
 }
 
@@ -215,7 +219,7 @@
 
   @media (min-width: $large) {
     width: 472px;
-    padding: 10px 37px 10px 18px;
+    padding: 9px 37px 10px 15px;
   }
 }
 

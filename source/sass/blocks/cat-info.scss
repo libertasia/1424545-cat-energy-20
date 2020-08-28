@@ -56,7 +56,7 @@
 }
 
 .cat-info__input {
-  font-family: inherit;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.12;
@@ -124,9 +124,15 @@
 }
 
 .cat-info__input::placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.125;
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  @media (min-width: $medium) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }

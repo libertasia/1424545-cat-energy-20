@@ -97,12 +97,12 @@
   flex-direction: column;
 
   @media (min-width: $medium) {
-    padding-top: 161px;
-    padding-bottom: 33px;
+    padding-top: 149px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $large) {
-    padding-top: 162px;
+    padding-top: 158px;
   }
 }
 
@@ -117,7 +117,8 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 21px;
+    margin-bottom: 13px;
+    margin-top: 8px;
   }
 }
 
