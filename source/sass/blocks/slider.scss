@@ -11,21 +11,29 @@
   @media (min-width: $large) {
     min-height: 325px;
     max-width: 681px;
+    justify-content: flex-start;
+    padding-bottom: 68px;
+    margin-top: -195px;
   }
 }
 
 .slider__images {
   position: relative;
+  left: -20px;
+  top: 34px;
   min-height: 240px;
 
   @media (min-width: $medium) {
     flex-shrink: 0;
     min-height: 517px;
+    left: 18px;
+    top: 26px;
   }
 
   @media (min-width: $large) {
     margin-right: -40px;
-    margin-bottom: 19px;
+    left: 0;
+    top: 0;
   }
 }
 
@@ -44,55 +52,56 @@
   &--before {
     @media (min-width: $medium) {
       display: block;
-      width: 50%;
-      background: linear-gradient(to top, $example-background-grey 344px, $basic-white 173px);
-      //width: 50%;
-      // left: 0;
+      width: 100%;
+      background: linear-gradient(to top, $example-background-grey 346px, $basic-white 173px);
     }
 
     @media (min-width: $large) {
-      background: linear-gradient(to top, $basic-grey 339px, $basic-white 178px);
-      width: 60%;
+      background: linear-gradient(to top, $basic-grey 322px, $basic-white 178px);
+      width: 100%;
     }
   }
 
   &--after {
     display: none;
-    //position: absolute;
     top: 0;
 
     @media (min-width: $medium) {
       display: block;
       background: linear-gradient(to top, $example-background-grey 344px, $basic-white 173px);
-      // right: 0;
+      width: 50%;
+      right: 20px;
     }
 
     @media (min-width: $large) {
-      background: linear-gradient(to top, $basic-grey 338px, $basic-white 179px);
-      //width: 47.1%;
+      background: linear-gradient(to top, $example-background-grey 321px, $basic-white 179px);
       top: -1px;
+      right: 0;
+      width: 47%;
+      height: 655px;
     }
   }
 }
 
 .slider__image-before {
-  // object-fit: none;
-  // object-position: left center;
-  // height: 100%;
-  // max-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .slider__image-after {
-  // object-fit: none;
-  // object-position: right center;
-  // height: 100%;
-  // max-width: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, $basic-white 196px, $example-background-grey 195px);
+
+  @media (min-width: $medium) {
+    background: linear-gradient(to bottom, $basic-white 171px, $example-background-grey 170px);
+  }
+
+  @media (min-width: $large) {
+    background: linear-gradient(to bottom, $basic-white 196px, $example-background-grey 195px);
+  }
 }
 
 .slider__control {
@@ -101,8 +110,16 @@
   justify-content: space-between;
   margin: 0 auto;
   width: 205px;
+  margin-top: 65px;
 
   @media (min-width: $medium) {
     width: 570px;
+    margin-top: 42px;
+  }
+
+  @media (min-width: $large) {
+    margin-top: 38px;
+    padding-left: 79px;
+    position: relative;
   }
 }

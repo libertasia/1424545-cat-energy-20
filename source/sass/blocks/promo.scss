@@ -39,7 +39,7 @@
 
   @media (min-width: $large) {
     margin-bottom: 82px;
-    padding-top: 114px;
+    padding-top: 111px;
     min-height: 471px;
     text-align: left;
   }
@@ -133,6 +133,7 @@
     margin-left: 82px;
     padding: 14px 26px 14px 26px;
     width: 192px;
+    position: relative;
   }
 
   &:hover {

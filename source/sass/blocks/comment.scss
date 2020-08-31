@@ -117,3 +117,7 @@
     margin: 0;
   }
 }
+
+.comment__text::placeholder {
+  color: $special-dark-grey;
+}

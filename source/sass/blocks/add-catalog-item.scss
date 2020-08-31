@@ -18,10 +18,15 @@
   @media (min-width: $large) {
     margin: 0;
     padding: 0;
+    padding-bottom: 3px;
   }
 }
 
 .add-catalog-item__description {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -31,9 +36,12 @@
   margin-bottom: 15px;
 
   @media (min-width: $medium) {
+    font-size: 16px;
+    line-height: 1.25;
     margin-bottom: 23px;
     padding: 0;
     padding-right: 38px;
+    justify-content: flex-end;
   }
 
   @media (min-width: $large) {
@@ -42,7 +50,9 @@
     margin-left: auto;
     margin-right: 40px;
     padding: 0;
+    padding-top: 5px;
     align-items: baseline;
+    justify-content: space-between;
   }
 }
 
@@ -72,7 +82,12 @@
   color: $special-dark-grey;
   text-transform: uppercase;
   margin: 0;
-  margin-left: auto;
-  flex-basis: 50%;
   text-align: right;
+
+  @media (min-width: $medium) {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+    margin-left: 51px;
+  }
 }

@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin>
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -16,7 +18,7 @@
             <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип Cat energy, перейти на главную страницу сайта">
           </picture>
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -70,7 +72,7 @@
                 <dl class="catalog-item__list">
                   <div class="item-description">
                     <dt class="item-description__title">
-                      Объем
+                      Масса
                     </dt>
                     <dd class="item-description__text">
                       500&nbsp;г
@@ -118,7 +120,7 @@
                 <dl class="catalog-item__list">
                   <div class="item-description">
                     <dt class="item-description__title">
-                      Объем
+                      Масса
                     </dt>
                     <dd class="item-description__text">
                       1000&nbsp;г
@@ -166,7 +168,7 @@
                 <dl class="catalog-item__list">
                   <div class="item-description">
                     <dt class="item-description__title">
-                      Объем
+                      Масса
                     </dt>
                     <dd class="item-description__text">
                       500&nbsp;г
@@ -214,7 +216,7 @@
                 <dl class="catalog-item__list">
                   <div class="item-description">
                     <dt class="item-description__title">
-                      Объем
+                      Масса
                     </dt>
                     <dd class="item-description__text">
                       1000&nbsp;г
@@ -262,7 +264,7 @@
                 <dl class="catalog-item__list">
                   <div class="item-description">
                     <dt class="item-description__title">
-                      Объем
+                      Масса
                     </dt>
                     <dd class="item-description__text">
                       500&nbsp;г
@@ -310,7 +312,7 @@
                 <dl class="catalog-item__list">
                   <div class="item-description">
                     <dt class="item-description__title">
-                      Объем
+                      Масса
                     </dt>
                     <dd class="item-description__text">
                       1000&nbsp;г
@@ -358,7 +360,7 @@
                 <dl class="catalog-item__list">
                   <div class="item-description">
                     <dt class="item-description__title">
-                      Объем
+                      Масса
                     </dt>
                     <dd class="item-description__text">
                       500&nbsp;г
@@ -391,11 +393,11 @@
                 <use xlink:href="img/sprite.svg#icon-plus"></use>
               </svg>
               <p class="catalog-more__text-show">
-                Показать еще<br>
+                Показать еще <br>
                 100500 товаров
               </p>
               <p class="catalog-more__more-taste">
-                На самом деле вкусов<br>
+                На самом деле вкусов <br>
                 гораздо больше!
               </p>
               <a class="catalog-more__show-button button button--show js-more" href="catalognew.html">
@@ -417,12 +419,8 @@
                 Сахарозаменитель
               </h3>
               <dl class="add-catalog-item__description">
-                <dt class="add-catalog-item__count">
-                  1&nbsp;упаковка (100&nbsp;г)
-                </dt>
-                <dd class="add-catalog-item__price">
-                  200&nbsp;р.
-                </dd>
+                <dt class="add-catalog-item__count">1&nbsp;упаковка&nbsp;(100&nbsp;г)</dt>
+                <dd class="add-catalog-item__price">200&nbsp;р.</dd>
               </dl>
               <a class="additional-catalog__order-button button button--order js-order" href="order.html">
                 Заказать
@@ -433,12 +431,8 @@
                 Питьевая вода
               </h3>
               <dl class="add-catalog-item__description">
-                <dt class="add-catalog-item__count">
-                  5&nbsp;литров
-                </dt>
-                <dd class="add-catalog-item__price">
-                  50&nbsp;р.
-                </dd>
+                <dt class="add-catalog-item__count">5&nbsp;литров</dt>
+                <dd class="add-catalog-item__price">50&nbsp;р.</dd>
               </dl>
               <a class="additional-catalog__order-button button button--order js-order" href="order.html">
                 Заказать
@@ -449,12 +443,8 @@
                 Молоко
               </h3>
               <dl class="add-catalog-item__description">
-                <dt class="add-catalog-item__count">
-                  1&nbsp;литр
-                </dt>
-                <dd class="add-catalog-item__price">
-                  100&nbsp;р.
-                </dd>
+                <dt class="add-catalog-item__count">1&nbsp;литр</dt>
+                <dd class="add-catalog-item__price">100&nbsp;р.</dd>
               </dl>
               <a class="additional-catalog__order-button button button--order js-order" href="order.html">
                 Заказать
@@ -465,28 +455,19 @@
                 Витамины
               </h3>
               <dl class="add-catalog-item__description">
-                <dt class="add-catalog-item__count">
-                  1&nbsp;упаковка (30&nbsp;г)
-                </dt>
-                <dd class="add-catalog-item__price">
-                  300&nbsp;р.
-                </dd>
+                <dt class="add-catalog-item__count">1&nbsp;упаковка&nbsp;(30&nbsp;г)</dt>
+                <dd class="add-catalog-item__price">300&nbsp;р.</dd>
               </dl>
               <a class="additional-catalog__order-button button button--order js-order" href="order.html">
                 Заказать
               </a>
             </li>
           </ul>
-          <div class="advertising">
-            <svg class="advertising__icon-gift" width="56" height="60" role="img" aria-label="Вас ждет подарок">
-              <use xlink:href="img/sprite.svg#icon-gift"></use>
-            </svg>
-            <p class="advertising__text">
-              Закажите все<br>
-              и получите чехол для<br>
-              кота в подарок!
-            </p>
-          </div>
+          <p class="advertising">
+            Закажите все<br>
+            и получите чехол для<br>
+            кота в подарок!
+          </p>
         </div>
       </section>
 
@@ -508,6 +489,9 @@
         </section>
 
         <div class="map">
+          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sfi!4v1598534362489!5m2!1sen!2sfi"
+          allowfullscreen="" aria-hidden="false" tabindex="0">
+          </iframe>
           <div class="map__image-wrapper">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
@@ -535,7 +519,7 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
                 <span class="visually-hidden">Вконтакте</span>
-                <svg class="social__icon-vkontakte" width="22" height="12" role="img">
+                <svg class="social__icon-vkontakte" width="22" height="12">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
@@ -543,7 +527,7 @@
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
                 <span class="visually-hidden">Инстаграм</span>
-                <svg class="social__icon-instagram" width="16" height="16" role="img">
+                <svg class="social__icon-instagram" width="16" height="16">
                   <use xlink:href="img/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -551,7 +535,7 @@
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
                 <span class="visually-hidden">Фейсбук</span>
-                <svg class="social__icon-facebook" width="10" height="19" role="img">
+                <svg class="social__icon-facebook" width="10" height="19">
                   <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -561,7 +545,7 @@
         <div class="footer__copyright copyright">
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <p>HTML Academy</p>
-            <svg class="copyright__logo-academy" width="27" height="34" role="img">
+            <svg class="copyright__logo-academy" width="27" height="34">
               <use xlink:href="img/sprite.svg#logo-academy"></use>
             </svg>
           </a>

@@ -27,6 +27,7 @@
     margin-top: 141px;
     padding-bottom: 38px;
     border: 2px solid $basic-grey;
+    justify-content: flex-start;
 
     &::after {
       display: none;
@@ -75,7 +76,7 @@
     font-size: 20px;
     line-height: 1.1;
     margin-bottom: 23px;
-    padding-top: 161px;
+    padding-top: 155px;
 
     br {
       display: block;

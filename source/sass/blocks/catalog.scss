@@ -5,7 +5,7 @@
   border-bottom: 1px solid $special-grey-2;
 
   @media (min-width: $medium) {
-    margin-bottom: 68px;
+    margin-bottom: 63px;
     border: none;
   }
 
@@ -61,7 +61,7 @@
   width: 280px;
   min-height: 184px;
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
