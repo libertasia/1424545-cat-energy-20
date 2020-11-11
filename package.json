@@ -48,6 +48,10 @@
     "node": "12.18.2"
   },
   "dependencies": {
+    "gift": "^0.10.2",
     "normalize-scss": "^7.0.1"
+  },
+  "resolutions": {
+    "gift": "^0.10.2"
   }
 }
